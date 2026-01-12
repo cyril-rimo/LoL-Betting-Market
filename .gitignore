@@ -1,2 +1,17 @@
 # .gitignore
+# Environment folders
+env/
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VSCode settings (optional but common)
+.vscode/
+
+# dotenv files
 .env
