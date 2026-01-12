@@ -1,19 +1,65 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function HomePage() {
-  const params = useSearchParams();
-  const marketUrl = params.get("market");
+  const [marketUrl, setMarketUrl] = useState<string | null>(null);
+
+  useEffect(() => {
+    let ws: WebSocket | null = null;
+
+    function connect() {
+      ws = new WebSocket("ws://localhost:8000/ws");
+
+      window.ws = ws; // for console debugging
+
+      ws.onopen = () => {
+        console.log("WebSocket connected");
+      };
+
+      // listen to event messages coming from the backend app
+      ws.onmessage = (event) => {
+        try {
+          const data = JSON.parse(event.data);
+
+          if (data.type === "market_created") { // if type attr doesn't exist, then the front end code ignores it
+            console.log("Received market:", data.url);
+            setMarketUrl(data.url);
+          }
+
+          if (data?.type === "STOP") {
+            setMarketUrl(null);
+          }
+        } catch (err) {
+          console.error("WS parse error:", err);
+        }
+      };
+
+
+      ws.onclose = () => {
+        console.log("WebSocket disconnected — retrying in 1s");
+        setTimeout(connect, 1000);
+      };
+    }
+
+    connect();  
+
+    return () => {
+      if (ws) ws.close();
+    };
+  }, []);
+
+  useEffect(() => {
+    console.log("marketUrl changed:", marketUrl);
+  }, [marketUrl]);
 
   return (
     <main className="p-8 max-w-5xl mx-auto space-y-12">
-
       {/* 1. Manifold Market Embed */}
       <section>
         <h2 className="text-xl font-semibold mb-3">Live Market</h2>
 
-        {marketUrl && (
+        {marketUrl ? (
           <div className="w-full h-[700px] border rounded-lg overflow-hidden">
             <iframe
               src={marketUrl}
@@ -21,6 +67,8 @@ export default function HomePage() {
               style={{ border: "none" }}
             />
           </div>
+        ) : (
+          <p className="text-gray-500">Waiting for market…</p>
         )}
       </section>
 
