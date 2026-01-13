@@ -14,3 +14,4 @@ class Config:
     RIOT_ID = os.getenv("RIOT_ID")
     TAGLINE = os.getenv("TAGLINE")
     REGION = os.getenv("REGION")
+    C_WORKER_URL = os.getenv("C_WORKER_URL")

@@ -7,26 +7,37 @@ export default function HomePage() {
 
   useEffect(() => {
     let ws: WebSocket | null = null;
+    // Replace with your actual Worker URL
+    const WORKER_URL = "https://market-relay.cyril-rimo.workers.dev/";
 
     function connect() {
-      ws = new WebSocket("ws://localhost:8000/ws");
-
-      //window.ws = ws; // for console debugging
+      ws = new WebSocket(WORKER_URL);
 
       ws.onopen = () => {
-        console.log("WebSocket connected");
+        console.log("✅ Connected to Cloudflare Relay");
       };
 
-      // listen to event messages coming from the backend app
       ws.onmessage = (event) => {
         try {
           const data = JSON.parse(event.data);
 
-          if (data.type === "market_created") { // if type attr doesn't exist, then the front end code ignores it
-            console.log("Received market:", data.url);
+          // 1. Handle History (sent once upon connection)
+          if (data.type === "history") {
+            console.log("📜 Received history from SQLite:", data.data);
+            if (data.data.length > 0) {
+              // Set the most recent market from history
+              const mostRecent = JSON.parse(data.data[0].data);
+              setMarketUrl(mostRecent.url);
+            }
+          } 
+          
+          // 2. Handle Live Broadcasts
+          else if (data.type === "market_created") {
+            console.log("🚀 Live market received:", data.url);
             setMarketUrl(data.url);
           }
 
+          // 3. Handle Stop/Reset
           if (data?.type === "STOP") {
             setMarketUrl(null);
           }
@@ -35,23 +46,23 @@ export default function HomePage() {
         }
       };
 
-
       ws.onclose = () => {
-        console.log("WebSocket disconnected — retrying in 1s");
-        setTimeout(connect, 1000);
+        console.log("❌ Disconnected — retrying in 2s");
+        setTimeout(connect, 2000);
+      };
+
+      ws.onerror = (err) => {
+        console.error("WS Error:", err);
+        ws?.close();
       };
     }
 
-    connect();  
+    connect();
 
     return () => {
       if (ws) ws.close();
     };
   }, []);
-
-  useEffect(() => {
-    console.log("marketUrl changed:", marketUrl);
-  }, [marketUrl]);
 
   return (
     <main className="p-8 max-w-5xl mx-auto space-y-12">
