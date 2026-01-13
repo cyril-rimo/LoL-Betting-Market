@@ -1,0 +1,174 @@
+{"EventID": 0, "EventName": "GameStart", "EventTime": 0.04243670031428337, "StartTime": 1768336113808, "ChampionName": "Riven"}
+Created Market with ID: lNU6UZpUPt
+View at https://manifold.markets/CyrilRimo/will-i-win-my-next-league-of-legend-Pn8lOht22N
+{"EventID": 1, "EventName": "MinionsSpawning", "EventTime": 30.06961441040039}
+{"Assisters": [], "EventID": 2, "EventName": "ChampionKill", "EventTime": 96.6735610961914, "KillerName": "Sett", "VictimName": "Riven"}
+{"EventID": 3, "EventName": "FirstBlood", "EventTime": 96.6735610961914, "Recipient": "Sett"}
+{"Assisters": [], "EventID": 4, "EventName": "ChampionKill", "EventTime": 197.06021118164062, "KillerName": "Irelia", "VictimName": "Vex"}
+{"Assisters": ["Vex"], "EventID": 5, "EventName": "ChampionKill", "EventTime": 203.48582458496094, "KillerName": "Nunu & Willump", "VictimName": "Irelia"}
+{"Assisters": [], "EventID": 6, "EventName": "ChampionKill", "EventTime": 203.70079040527344, "KillerName": "Riven", "VictimName": "Sett"}
+{"Assisters": [], "EventID": 7, "EventName": "ChampionKill", "EventTime": 316.17364501953125, "KillerName": "Vex", "VictimName": "Irelia"}
+{"Assisters": ["Nunu & Willump", "Seraphine"], "EventID": 8, "EventName": "ChampionKill", "EventTime": 335.31231689453125, "KillerName": "Caitlyn", "VictimName": "Ashe"}
+{"Assisters": [], "EventID": 9, "EventName": "ChampionKill", "EventTime": 345.5970153808594, "KillerName": "Ashe", "VictimName": "Seraphine"}
+{"Assisters": ["Ashe", "Blitzcrank"], "EventID": 10, "EventName": "ChampionKill", "EventTime": 347.19647216796875, "KillerName": "Amumu", "VictimName": "Caitlyn"}
+{"Assisters": [], "EventID": 11, "EventName": "ChampionKill", "EventTime": 378.78131103515625, "KillerName": "Sett", "VictimName": "Riven"}
+{"Assisters": ["Nunu & Willump"], "EventID": 12, "EventName": "ChampionKill", "EventTime": 381.4309387207031, "KillerName": "Vex", "VictimName": "Irelia"}
+{"Assisters": ["Seraphine"], "EventID": 13, "EventName": "ChampionKill", "EventTime": 412.7231140136719, "KillerName": "Caitlyn", "VictimName": "Ashe"}
+{"Assisters": ["Vex"], "EventID": 14, "EventName": "ChampionKill", "EventTime": 490.9390869140625, "KillerName": "Nunu & Willump", "VictimName": "Irelia"}
+{"Assisters": ["Blitzcrank"], "EventID": 15, "EventName": "ChampionKill", "EventTime": 511.28167724609375, "KillerName": "Amumu", "VictimName": "Nunu & Willump"}
+{"Assisters": [], "EventID": 16, "EventName": "ChampionKill", "EventTime": 537.3749389648438, "KillerName": "Irelia", "VictimName": "Vex"}
+{"Assisters": ["Seraphine"], "EventID": 17, "EventName": "ChampionKill", "EventTime": 537.5223999023438, "KillerName": "Vex", "VictimName": "Irelia"}
+{"Assisters": [], "DragonType": "Hextech", "EventID": 18, "EventName": "DragonKill", "EventTime": 578.3049926757812, "KillerName": "Amumu", "Stolen": "False"}
+{"Assisters": ["Sett"], "EventID": 19, "EventName": "ChampionKill", "EventTime": 622.1220092773438, "KillerName": "Nunu & Willump", "VictimName": "Riven"}
+{"Assisters": ["Nunu & Willump"], "EventID": 20, "EventName": "HordeKill", "EventTime": 635.7549438476562, "KillerName": "Sett", "Stolen": "False"}
+{"Assisters": ["Sett"], "EventID": 21, "EventName": "HordeKill", "EventTime": 642.1044311523438, "KillerName": "Nunu & Willump", "Stolen": "False"}
+{"Assisters": ["Sett"], "EventID": 22, "EventName": "HordeKill", "EventTime": 646.7785034179688, "KillerName": "Nunu & Willump", "Stolen": "False"}
+{"Assisters": ["Blitzcrank"], "EventID": 23, "EventName": "ChampionKill", "EventTime": 648.4450073242188, "KillerName": "Irelia", "VictimName": "Vex"}
+{"Assisters": ["Seraphine"], "EventID": 24, "EventName": "ChampionKill", "EventTime": 658.5724487304688, "KillerName": "Caitlyn", "VictimName": "Ashe"}
+{"Assisters": ["Ashe", "Blitzcrank"], "EventID": 25, "EventName": "ChampionKill", "EventTime": 716.4580688476562, "KillerName": "Amumu", "VictimName": "Caitlyn"}
+{"Assisters": ["Caitlyn", "Seraphine"], "EventID": 26, "EventName": "ChampionKill", "EventTime": 722.2348022460938, "KillerName": "Vex", "VictimName": "Amumu"}
+{"Assisters": ["Vex", "Seraphine"], "EventID": 27, "EventName": "TurretKilled", "EventTime": 743.013916015625, "KillerName": "Nunu & Willump", "TurretKilled": "Turret_TOrder_L0_P3_3795288474"}
+{"EventID": 28, "EventName": "FirstBrick", "EventTime": 743.013916015625, "KillerName": "Nunu & Willump"}
+{"Assisters": [], "EventID": 29, "EventName": "ChampionKill", "EventTime": 766.743408203125, "KillerName": "Sett", "VictimName": "Riven"}
+{"Assisters": ["Caitlyn", "Seraphine"], "EventID": 30, "EventName": "TurretKilled", "EventTime": 792.817138671875, "KillerName": "Vex", "TurretKilled": "Turret_TOrder_L1_P3_1242677625"}
+{"Assisters": ["Vex", "Seraphine"], "EventID": 31, "EventName": "ChampionKill", "EventTime": 810.2567749023438, "KillerName": "Caitlyn", "VictimName": "Irelia"}
+{"Assisters": ["Amumu", "Irelia"], "EventID": 32, "EventName": "ChampionKill", "EventTime": 819.0211791992188, "KillerName": "Ashe", "VictimName": "Vex"}
+{"Assisters": ["Irelia", "Ashe"], "EventID": 33, "EventName": "ChampionKill", "EventTime": 823.6970825195312, "KillerName": "Blitzcrank", "VictimName": "Seraphine"}
+{"Assisters": ["Nunu & Willump"], "EventID": 34, "EventName": "ChampionKill", "EventTime": 839.792236328125, "KillerName": "Caitlyn", "VictimName": "Amumu"}
+{"Assisters": ["Nunu & Willump"], "EventID": 35, "EventName": "ChampionKill", "EventTime": 844.5388793945312, "KillerName": "Caitlyn", "VictimName": "Ashe"}
+{"EventID": 36, "EventName": "Multikill", "EventTime": 844.5388793945312, "KillStreak": 2, "KillerName": "Caitlyn"}
+{"Assisters": ["Ashe", "Blitzcrank"], "EventID": 37, "EventName": "ChampionKill", "EventTime": 857.6767578125, "KillerName": "Irelia", "VictimName": "Caitlyn"}
+{"Assisters": [], "EventID": 38, "EventName": "TurretKilled", "EventTime": 858.2399291992188, "KillerName": "Sett", "TurretKilled": "Turret_TOrder_L2_P3_1509986696"}
+{"Assisters": ["Amumu", "Ashe", "Blitzcrank"], "EventID": 39, "EventName": "HeraldKill", "EventTime": 918.44775390625, "KillerName": "Irelia", "Stolen": "False"}
+{"Assisters": ["Sett", "Vex", "Seraphine"], "DragonType": "Fire", "EventID": 40, "EventName": "DragonKill", "EventTime": 934.7662353515625, "KillerName": "Nunu & Willump", "Stolen": "False"}
+{"Assisters": ["Amumu", "Irelia", "Blitzcrank"], "EventID": 41, "EventName": "ChampionKill", "EventTime": 939.388916015625, "KillerName": "Ashe", "VictimName": "Caitlyn"}
+{"Assisters": ["Amumu", "Blitzcrank"], "EventID": 42, "EventName": "ChampionKill", "EventTime": 940.4965209960938, "KillerName": "Irelia", "VictimName": "Seraphine"}
+{"Assisters": ["Nunu & Willump", "Vex", "Caitlyn", "Seraphine"], "EventID": 43, "EventName": "ChampionKill", "EventTime": 944.6099853515625, "KillerName": "Sett", "VictimName": "Amumu"}
+{"Assisters": ["Nunu & Willump", "Vex", "Caitlyn", "Seraphine"], "EventID": 44, "EventName": "ChampionKill", "EventTime": 950.4672241210938, "KillerName": "Sett", "VictimName": "Irelia"}
+{"EventID": 45, "EventName": "Multikill", "EventTime": 950.4672241210938, "KillStreak": 2, "KillerName": "Sett"}
+{"Assisters": ["Nunu & Willump"], "EventID": 46, "EventName": "ChampionKill", "EventTime": 954.1347045898438, "KillerName": "Vex", "VictimName": "Ashe"}
+{"Assisters": ["Nunu & Willump", "Vex"], "EventID": 47, "EventName": "ChampionKill", "EventTime": 962.95751953125, "KillerName": "Sett", "VictimName": "Blitzcrank"}
+{"Assisters": [], "EventID": 48, "EventName": "TurretKilled", "EventTime": 981.288330078125, "KillerName": "Riven", "TurretKilled": "Turret_TChaos_L2_P3_2521511112"}
+{"Assisters": ["Vex"], "EventID": 49, "EventName": "TurretKilled", "EventTime": 982.4461059570312, "KillerName": "Sett", "TurretKilled": "Turret_TOrder_L1_P2_1225900006"}
+{"Assisters": [], "EventID": 50, "EventName": "ChampionKill", "EventTime": 1040.8428955078125, "KillerName": "Irelia", "VictimName": "Vex"}
+{"Assisters": ["Ashe", "Blitzcrank"], "EventID": 51, "EventName": "ChampionKill", "EventTime": 1050.06640625, "KillerName": "Amumu", "VictimName": "Seraphine"}
+{"Assisters": ["Nunu & Willump", "Vex"], "EventID": 52, "EventName": "ChampionKill", "EventTime": 1050.1053466796875, "KillerName": "Sett", "VictimName": "Irelia"}
+{"Assisters": ["Ashe", "Blitzcrank"], "EventID": 53, "EventName": "ChampionKill", "EventTime": 1053.0966796875, "KillerName": "Amumu", "VictimName": "Caitlyn"}
+{"EventID": 54, "EventName": "Multikill", "EventTime": 1053.0966796875, "KillStreak": 2, "KillerName": "Amumu"}
+{"Assisters": [], "EventID": 55, "EventName": "TurretKilled", "EventTime": 1104.422119140625, "KillerName": "Riven", "TurretKilled": "Turret_TChaos_L1_P3_2254202041"}
+{"Assisters": ["Sett", "Nunu & Willump", "Vex", "Seraphine"], "EventID": 56, "EventName": "ChampionKill", "EventTime": 1109.7056884765625, "KillerName": "Caitlyn", "VictimName": "Amumu"}
+{"Assisters": ["Sett", "Vex", "Caitlyn", "Seraphine"], "EventID": 57, "EventName": "ChampionKill", "EventTime": 1111.8004150390625, "KillerName": "Nunu & Willump", "VictimName": "Riven"}
+{"Assisters": ["Nunu & Willump", "Caitlyn", "Seraphine"], "EventID": 58, "EventName": "ChampionKill", "EventTime": 1123.5107421875, "KillerName": "Vex", "VictimName": "Ashe"}
+{"Assisters": ["Vex", "Seraphine"], "EventID": 59, "EventName": "ChampionKill", "EventTime": 1132.1827392578125, "KillerName": "Caitlyn", "VictimName": "Blitzcrank"}
+{"Assisters": [], "EventID": 60, "EventName": "TurretKilled", "EventTime": 1150.175537109375, "KillerName": "Irelia", "TurretKilled": "Turret_TChaos_L0_P3_511845594"}
+{"Assisters": ["Amumu", "Ashe"], "EventID": 61, "EventName": "ChampionKill", "EventTime": 1192.1927490234375, "KillerName": "Irelia", "VictimName": "Caitlyn"}
+{"Assisters": ["Amumu", "Ashe", "Blitzcrank"], "EventID": 62, "EventName": "ChampionKill", "EventTime": 1195.768798828125, "KillerName": "Irelia", "VictimName": "Sett"}
+{"EventID": 63, "EventName": "Multikill", "EventTime": 1195.768798828125, "KillStreak": 2, "KillerName": "Irelia"}
+{"Assisters": ["Sett", "Nunu & Willump", "Caitlyn", "Seraphine"], "EventID": 64, "EventName": "ChampionKill", "EventTime": 1198.281982421875, "KillerName": "Vex", "VictimName": "Amumu"}
+{"Assisters": ["Amumu", "Irelia", "Blitzcrank"], "EventID": 65, "EventName": "ChampionKill", "EventTime": 1199.846435546875, "KillerName": "Ashe", "VictimName": "Nunu & Willump"}
+{"Assisters": ["Amumu", "Irelia", "Ashe"], "EventID": 66, "EventName": "ChampionKill", "EventTime": 1201.14111328125, "KillerName": "Blitzcrank", "VictimName": "Vex"}
+{"Assisters": ["Ashe"], "EventID": 67, "EventName": "ChampionKill", "EventTime": 1208.409912109375, "KillerName": "Irelia", "VictimName": "Seraphine"}
+{"Acer": "Irelia", "AcingTeam": "ORDER", "EventID": 68, "EventName": "Ace", "EventTime": 1208.409912109375}
+{"Assisters": ["Riven", "Amumu", "Sett"], "DragonType": "Water", "EventID": 69, "EventName": "DragonKill", "EventTime": 1272.915283203125, "KillerName": "Nunu & Willump", "Stolen": "False"}
+{"Assisters": ["Sett", "Nunu & Willump", "Vex"], "EventID": 70, "EventName": "ChampionKill", "EventTime": 1277.447265625, "KillerName": "Caitlyn", "VictimName": "Riven"}
+{"Assisters": ["Nunu & Willump", "Vex", "Seraphine"], "EventID": 71, "EventName": "ChampionKill", "EventTime": 1278.09326171875, "KillerName": "Sett", "VictimName": "Amumu"}
+{"Assisters": ["Vex", "Caitlyn"], "EventID": 72, "EventName": "BaronKill", "EventTime": 1328.454345703125, "KillerName": "Nunu & Willump", "Stolen": "False"}
+{"Assisters": ["Vex"], "EventID": 73, "EventName": "TurretKilled", "EventTime": 1374.126708984375, "KillerName": "Caitlyn", "TurretKilled": "Turret_TOrder_L1_P1_1209122387"}
+{"Assisters": ["Amumu", "Blitzcrank"], "EventID": 74, "EventName": "ChampionKill", "EventTime": 1386.4063720703125, "KillerName": "Riven", "VictimName": "Caitlyn"}
+{"Assisters": ["Seraphine"], "EventID": 75, "EventName": "ChampionKill", "EventTime": 1387.251953125, "KillerName": "Vex", "VictimName": "Ashe"}
+{"Assisters": ["Vex", "Caitlyn", "Seraphine"], "EventID": 76, "EventName": "ChampionKill", "EventTime": 1389.0064697265625, "KillerName": "Sett", "VictimName": "Amumu"}
+{"Assisters": ["Amumu", "Blitzcrank"], "EventID": 77, "EventName": "ChampionKill", "EventTime": 1392.7403564453125, "KillerName": "Riven", "VictimName": "Seraphine"}
+{"EventID": 78, "EventName": "Multikill", "EventTime": 1392.7403564453125, "KillStreak": 2, "KillerName": "Riven"}
+{"Assisters": ["Amumu", "Ashe", "Blitzcrank"], "EventID": 79, "EventName": "ChampionKill", "EventTime": 1396.776123046875, "KillerName": "Irelia", "VictimName": "Vex"}
+{"Assisters": ["Sett", "Seraphine"], "EventID": 80, "EventName": "InhibKilled", "EventTime": 1480.4014892578125, "InhibKilled": "Inhib_TOrder_L1_P1_2786523670", "KillerName": "Caitlyn"}
+{"Assisters": [], "EventID": 81, "EventName": "TurretKilled", "EventTime": 1493.369873046875, "KillerName": "Irelia", "TurretKilled": "Turret_TChaos_L2_P2_2538288731"}
+{"Assisters": ["Blitzcrank"], "EventID": 82, "EventName": "ChampionKill", "EventTime": 1500.15576171875, "KillerName": "Amumu", "VictimName": "Caitlyn"}
+{"Assisters": ["Ashe"], "EventID": 83, "EventName": "ChampionKill", "EventTime": 1527.7138671875, "KillerName": "Irelia", "VictimName": "Vex"}
+{"Assisters": [], "EventID": 84, "EventName": "TurretKilled", "EventTime": 1530.678955078125, "KillerName": "Minion_T200L0S53N0325", "TurretKilled": "Turret_TOrder_L0_P2_3812066093"}
+{"Assisters": ["Amumu"], "EventID": 85, "EventName": "ChampionKill", "EventTime": 1534.410400390625, "KillerName": "Blitzcrank", "VictimName": "Sett"}
+{"Assisters": [], "EventID": 86, "EventName": "ChampionKill", "EventTime": 1539.2396240234375, "KillerName": "Irelia", "VictimName": "Seraphine"}
+{"Assisters": ["Irelia", "Ashe", "Blitzcrank"], "DragonType": "Water", "EventID": 87, "EventName": "DragonKill", "EventTime": 1580.80322265625, "KillerName": "Amumu", "Stolen": "False"}
+{"Assisters": ["Amumu", "Ashe", "Blitzcrank"], "EventID": 88, "EventName": "ChampionKill", "EventTime": 1589.0006103515625, "KillerName": "Riven", "VictimName": "Nunu & Willump"}
+{"Assisters": ["Nunu & Willump", "Caitlyn", "Seraphine"], "EventID": 89, "EventName": "ChampionKill", "EventTime": 1603.443359375, "KillerName": "Vex", "VictimName": "Riven"}
+{"Assisters": ["Sett", "Vex", "Seraphine"], "EventID": 90, "EventName": "ChampionKill", "EventTime": 1606.2296142578125, "KillerName": "Caitlyn", "VictimName": "Blitzcrank"}
+{"Assisters": ["Amumu"], "EventID": 91, "EventName": "ChampionKill", "EventTime": 1683.395263671875, "KillerName": "Irelia", "VictimName": "Seraphine"}
+{"Assisters": ["Sett", "Nunu & Willump", "Vex", "Seraphine"], "EventID": 92, "EventName": "ChampionKill", "EventTime": 1689.20166015625, "KillerName": "Caitlyn", "VictimName": "Riven"}
+{"Assisters": ["Ashe"], "EventID": 93, "EventName": "ChampionKill", "EventTime": 1689.2344970703125, "KillerName": "Irelia", "VictimName": "Vex"}
+{"EventID": 94, "EventName": "Multikill", "EventTime": 1689.2344970703125, "KillStreak": 2, "KillerName": "Irelia"}
+{"Assisters": ["Amumu", "Blitzcrank"], "EventID": 95, "EventName": "ChampionKill", "EventTime": 1693.911865234375, "KillerName": "Ashe", "VictimName": "Caitlyn"}
+{"Assisters": ["Amumu", "Ashe", "Blitzcrank"], "EventID": 96, "EventName": "ChampionKill", "EventTime": 1696.6251220703125, "KillerName": "Irelia", "VictimName": "Sett"}
+{"EventID": 97, "EventName": "Multikill", "EventTime": 1696.6251220703125, "KillStreak": 3, "KillerName": "Irelia"}
+{"Assisters": ["Riven", "Amumu", "Ashe", "Blitzcrank"], "EventID": 98, "EventName": "ChampionKill", "EventTime": 1701.4974365234375, "KillerName": "Irelia", "VictimName": "Nunu & Willump"}
+{"EventID": 99, "EventName": "Multikill", "EventTime": 1701.4974365234375, "KillStreak": 4, "KillerName": "Irelia"}
+{"Acer": "Irelia", "AcingTeam": "ORDER", "EventID": 100, "EventName": "Ace", "EventTime": 1701.4974365234375}
+{"Assisters": ["Amumu", "Ashe"], "EventID": 101, "EventName": "BaronKill", "EventTime": 1736.9051513671875, "KillerName": "Irelia", "Stolen": "False"}
+{"EventID": 102, "EventName": "InhibRespawned", "EventTime": 1780.38720703125, "InhibRespawned": "Inhib_TOrder_L1_P1_2786523670"}
+{"Assisters": ["Nunu & Willump", "Vex", "Seraphine"], "EventID": 103, "EventName": "ChampionKill", "EventTime": 1813.2158203125, "KillerName": "Sett", "VictimName": "Blitzcrank"}
+{"Assisters": ["Sett", "Nunu & Willump", "Vex"], "EventID": 104, "EventName": "ChampionKill", "EventTime": 1824.70703125, "KillerName": "Seraphine", "VictimName": "Irelia"}
+{"Assisters": ["Riven", "Irelia", "Ashe", "Blitzcrank"], "EventID": 105, "EventName": "ChampionKill", "EventTime": 1826.0745849609375, "KillerName": "Amumu", "VictimName": "Vex"}
+{"Assisters": ["Riven", "Irelia", "Ashe", "Blitzcrank"], "EventID": 106, "EventName": "ChampionKill", "EventTime": 1826.1907958984375, "KillerName": "Amumu", "VictimName": "Sett"}
+{"EventID": 107, "EventName": "Multikill", "EventTime": 1826.1907958984375, "KillStreak": 2, "KillerName": "Amumu"}
+{"Assisters": ["Amumu", "Ashe"], "EventID": 108, "EventName": "ChampionKill", "EventTime": 1828.8052978515625, "KillerName": "Riven", "VictimName": "Nunu & Willump"}
+{"Assisters": ["Riven"], "EventID": 109, "EventName": "TurretKilled", "EventTime": 1841.5704345703125, "KillerName": "Ashe", "TurretKilled": "Turret_TChaos_L1_P2_2237424422"}
+{"Assisters": ["Seraphine"], "EventID": 110, "EventName": "ChampionKill", "EventTime": 1884.6517333984375, "KillerName": "Caitlyn", "VictimName": "Riven"}
+{"Assisters": ["Ashe", "Blitzcrank"], "DragonType": "Water", "EventID": 111, "EventName": "DragonKill", "EventTime": 1890.34228515625, "KillerName": "Amumu", "Stolen": "False"}
+{"Assisters": [], "EventID": 112, "EventName": "TurretKilled", "EventTime": 1993.6461181640625, "KillerName": "Riven", "TurretKilled": "Turret_TChaos_L0_P2_528623213"}
+{"Assisters": ["Nunu & Willump", "Vex", "Caitlyn", "Seraphine"], "EventID": 113, "EventName": "ChampionKill", "EventTime": 2005.727783203125, "KillerName": "Sett", "VictimName": "Blitzcrank"}
+{"Assisters": ["Riven", "Amumu", "Ashe", "Blitzcrank"], "EventID": 114, "EventName": "ChampionKill", "EventTime": 2005.80224609375, "KillerName": "Irelia", "VictimName": "Sett"}
+{"Assisters": ["Sett", "Nunu & Willump", "Vex", "Seraphine"], "EventID": 115, "EventName": "ChampionKill", "EventTime": 2007.18408203125, "KillerName": "Caitlyn", "VictimName": "Amumu"}
+{"Assisters": ["Riven", "Amumu", "Irelia", "Blitzcrank"], "EventID": 116, "EventName": "ChampionKill", "EventTime": 2012.4493408203125, "KillerName": "Ashe", "VictimName": "Nunu & Willump"}
+{"Assisters": ["Blitzcrank"], "EventID": 117, "EventName": "ChampionKill", "EventTime": 2014.264404296875, "KillerName": "Irelia", "VictimName": "Seraphine"}
+{"EventID": 118, "EventName": "Multikill", "EventTime": 2014.264404296875, "KillStreak": 2, "KillerName": "Irelia"}
+{"Assisters": ["Riven", "Ashe", "Blitzcrank"], "EventID": 119, "EventName": "ChampionKill", "EventTime": 2016.62353515625, "KillerName": "Irelia", "VictimName": "Vex"}
+{"EventID": 120, "EventName": "Multikill", "EventTime": 2016.62353515625, "KillStreak": 3, "KillerName": "Irelia"}
+{"Assisters": [], "EventID": 121, "EventName": "TurretKilled", "EventTime": 2039.8726806640625, "KillerName": "Ashe", "TurretKilled": "Turret_TChaos_L0_P1_478290356"}
+{"Assisters": ["Ashe"], "EventID": 122, "EventName": "InhibKilled", "EventTime": 2044.6572265625, "InhibKilled": "Inhib_TChaos_L0_P1_2116220407", "KillerName": "Irelia"}
+{"Assisters": [], "EventID": 123, "EventName": "TurretKilled", "EventTime": 2054.955810546875, "KillerName": "Riven", "TurretKilled": "Turret_TChaos_L1_P1_2220646803"}
+{"Assisters": ["Nunu & Willump", "Vex", "Caitlyn", "Seraphine"], "EventID": 124, "EventName": "ChampionKill", "EventTime": 2130.06494140625, "KillerName": "Sett", "VictimName": "Amumu"}
+{"Assisters": ["Nunu & Willump", "Vex", "Caitlyn", "Seraphine"], "EventID": 125, "EventName": "ChampionKill", "EventTime": 2130.06494140625, "KillerName": "Sett", "VictimName": "Blitzcrank"}
+{"EventID": 126, "EventName": "Multikill", "EventTime": 2130.06494140625, "KillStreak": 2, "KillerName": "Sett"}
+{"Assisters": ["Sett", "Nunu & Willump", "Seraphine"], "EventID": 127, "EventName": "ChampionKill", "EventTime": 2132.122314453125, "KillerName": "Vex", "VictimName": "Ashe"}
+{"Assisters": ["Sett", "Nunu & Willump", "Vex", "Seraphine"], "EventID": 128, "EventName": "ChampionKill", "EventTime": 2134.591064453125, "KillerName": "Caitlyn", "VictimName": "Irelia"}
+{"Assisters": ["Nunu & Willump", "Caitlyn", "Seraphine"], "EventID": 129, "EventName": "BaronKill", "EventTime": 2152.710205078125, "KillerName": "Sett", "Stolen": "False"}
+{"Assisters": ["Sett", "Caitlyn", "Seraphine"], "DragonType": "Water", "EventID": 130, "EventName": "DragonKill", "EventTime": 2199.422607421875, "KillerName": "Nunu & Willump", "Stolen": "False"}
+{"Assisters": ["Sett", "Vex", "Seraphine"], "EventID": 131, "EventName": "ChampionKill", "EventTime": 2247.761962890625, "KillerName": "Caitlyn", "VictimName": "Blitzcrank"}
+{"Assisters": ["Seraphine"], "EventID": 132, "EventName": "ChampionKill", "EventTime": 2251.002685546875, "KillerName": "Sett", "VictimName": "Ashe"}
+{"Assisters": ["Sett", "Vex", "Caitlyn", "Seraphine"], "EventID": 133, "EventName": "ChampionKill", "EventTime": 2253.92236328125, "KillerName": "Nunu & Willump", "VictimName": "Irelia"}
+{"Assisters": ["Sett", "Nunu & Willump", "Vex", "Seraphine"], "EventID": 134, "EventName": "ChampionKill", "EventTime": 2253.941162109375, "KillerName": "Caitlyn", "VictimName": "Amumu"}
+{"EventID": 135, "EventName": "Multikill", "EventTime": 2253.941162109375, "KillStreak": 2, "KillerName": "Caitlyn"}
+{"Assisters": ["Sett", "Nunu & Willump", "Vex", "Seraphine"], "EventID": 136, "EventName": "ChampionKill", "EventTime": 2256.03076171875, "KillerName": "Caitlyn", "VictimName": "Riven"}
+{"EventID": 137, "EventName": "Multikill", "EventTime": 2256.03076171875, "KillStreak": 3, "KillerName": "Caitlyn"}
+{"Acer": "Caitlyn", "AcingTeam": "CHAOS", "EventID": 138, "EventName": "Ace", "EventTime": 2256.03076171875}
+{"Assisters": ["Nunu & Willump", "Vex", "Seraphine"], "EventID": 139, "EventName": "InhibKilled", "EventTime": 2280.483154296875, "InhibKilled": "Inhib_TOrder_L1_P1_2786523670", "KillerName": "Caitlyn"}
+{"Assisters": ["Sett", "Nunu & Willump", "Seraphine"], "EventID": 140, "EventName": "TurretKilled", "EventTime": 2290.308837890625, "KillerName": "Vex", "TurretKilled": "Turret_TOrder_L1_P5_3625540808"}
+{"Assisters": ["Sett", "Nunu & Willump", "Seraphine"], "EventID": 141, "EventName": "TurretKilled", "EventTime": 2291.106689453125, "KillerName": "Caitlyn", "TurretKilled": "Turret_TOrder_L1_P4_3675873665"}
+{"EventName": "ListenerStopped", "EventID": -1, "StartTime": 1768336113808, "EndTime": 1768338416058, "Reason": "Listener has stopped."}
+{"EventID": 0, "EventName": "GameStart", "EventTime": 0.05655049905180931, "StartTime": 1768339192180, "ChampionName": "Shyvana"}
+Created Market with ID: hLgNOUuN6c
+View at https://manifold.markets/CyrilRimo/will-i-win-my-next-league-of-legend-yySI5Os6S8
+{"EventID": 1, "EventName": "MinionsSpawning", "EventTime": 30.045291900634766}
+{"Assisters": [], "EventID": 2, "EventName": "ChampionKill", "EventTime": 140.2002716064453, "KillerName": "Jhin", "VictimName": "Milio"}
+{"EventID": 3, "EventName": "FirstBlood", "EventTime": 140.2002716064453, "Recipient": "Jhin"}
+{"Assisters": [], "EventID": 4, "EventName": "ChampionKill", "EventTime": 197.06130981445312, "KillerName": "Shyvana", "VictimName": "Jayce"}
+{"Assisters": ["Jayce"], "EventID": 5, "EventName": "ChampionKill", "EventTime": 198.33775329589844, "KillerName": "Graves", "VictimName": "Shyvana"}
+{"Assisters": [], "EventID": 6, "EventName": "ChampionKill", "EventTime": 266.81109619140625, "KillerName": "Jayce", "VictimName": "Shyvana"}
+{"Assisters": [], "EventID": 7, "EventName": "ChampionKill", "EventTime": 373.6965637207031, "KillerName": "Diana", "VictimName": "Kassadin"}
+{"Assisters": ["Jhin"], "EventID": 8, "EventName": "ChampionKill", "EventTime": 393.89654541015625, "KillerName": "Galio", "VictimName": "Milio"}
+{"Assisters": ["Graves", "Galio"], "EventID": 9, "EventName": "ChampionKill", "EventTime": 423.409423828125, "KillerName": "Diana", "VictimName": "Sett"}
+{"Assisters": ["Sett", "Diana", "Jhin", "Galio"], "DragonType": "Earth", "EventID": 10, "EventName": "DragonKill", "EventTime": 427.7280578613281, "KillerName": "Graves", "Stolen": "False"}
+{"Assisters": ["Galio"], "EventID": 11, "EventName": "ChampionKill", "EventTime": 471.2896728515625, "KillerName": "Jhin", "VictimName": "Jinx"}
+{"Assisters": [], "EventID": 12, "EventName": "HordeKill", "EventTime": 502.20941162109375, "KillerName": "Sett", "Stolen": "False"}
+{"Assisters": [], "EventID": 13, "EventName": "HordeKill", "EventTime": 508.1076354980469, "KillerName": "Sett", "Stolen": "False"}
+{"Assisters": ["Shyvana"], "EventID": 14, "EventName": "HordeKill", "EventTime": 515.140869140625, "KillerName": "Sett", "Stolen": "False"}
+{"Assisters": ["Sett", "Kassadin"], "EventID": 15, "EventName": "ChampionKill", "EventTime": 542.29736328125, "KillerName": "Shyvana", "VictimName": "Jayce"}
+{"Assisters": ["Milio"], "EventID": 16, "EventName": "ChampionKill", "EventTime": 605.8052368164062, "KillerName": "Jinx", "VictimName": "Galio"}
+{"Assisters": ["Diana", "Jhin"], "EventID": 17, "EventName": "ChampionKill", "EventTime": 631.7589721679688, "KillerName": "Graves", "VictimName": "Milio"}
+{"Assisters": ["Diana", "Jhin"], "EventID": 18, "EventName": "ChampionKill", "EventTime": 634.8375854492188, "KillerName": "Graves", "VictimName": "Jinx"}
+{"EventID": 19, "EventName": "Multikill", "EventTime": 634.8375854492188, "KillStreak": 2, "KillerName": "Graves"}
+{"Assisters": [], "EventID": 20, "EventName": "ChampionKill", "EventTime": 713.003662109375, "KillerName": "Shyvana", "VictimName": "Jayce"}
+{"Assisters": ["Jhin", "Galio"], "EventID": 21, "EventName": "ChampionKill", "EventTime": 724.3201293945312, "KillerName": "Diana", "VictimName": "Milio"}
+{"Assisters": ["Jhin", "Galio"], "EventID": 22, "EventName": "ChampionKill", "EventTime": 731.3173217773438, "KillerName": "Diana", "VictimName": "Jinx"}
+{"EventID": 23, "EventName": "Multikill", "EventTime": 731.3173217773438, "KillStreak": 2, "KillerName": "Diana"}
+{"Assisters": [], "EventID": 24, "EventName": "ChampionKill", "EventTime": 734.4840698242188, "KillerName": "Graves", "VictimName": "Shyvana"}
+{"Assisters": ["Sett"], "EventID": 25, "EventName": "ChampionKill", "EventTime": 744.6837158203125, "KillerName": "Kassadin", "VictimName": "Diana"}
+{"Assisters": ["Graves", "Diana", "Galio"], "EventID": 26, "EventName": "ChampionKill", "EventTime": 749.3013305664062, "KillerName": "Jhin", "VictimName": "Kassadin"}

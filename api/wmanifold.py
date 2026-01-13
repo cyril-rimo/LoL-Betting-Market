@@ -57,10 +57,17 @@ class ManifoldClient:
 
     def create_league_market(self, champion_name: str) -> str:
         url = "https://api.manifold.markets/v0/market"
+
+        description = """
+        Created by a bot by Cyril Rimo. 
+        You can view my live game here https://op.gg/lol/summoners/na/SirAgathon-NA1/ingame.
+        You can self-host your own bot too https://github.com/cyril-rimo/LoL-Betting-Market
+        See my demo https://cyril-rimo.pages.dev/
+        """
         payload = {
             "outcomeType": "BINARY",
             "question": f"Will I win my next League of Legends match as {champion_name}?",
-            "description": "Automatically created by the LeaguePredictionMkt bot. See live game here: https://op.gg/lol/summoners/na/SirAgathon-NA1/ingame\n\nAdmin discord: spacecowboyjo_10087",
+            "description": description,
             "initialProb": 50,
             "visibility": "public",
             "liquidityTier": 100,

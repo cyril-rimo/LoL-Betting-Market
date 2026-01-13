@@ -109,7 +109,7 @@ def react(queue, riot_client=None, manifold_client=None):
                     log.flush()
 
                 asyncio.run_coroutine_threadsafe(
-                    wsManager.broadcast_after_client(
+                    wsManager.broadcast(
                         {
                             "type": "market_created",
                             "url": market_url,
@@ -132,7 +132,7 @@ def react(queue, riot_client=None, manifold_client=None):
                     log.flush()
 
                 asyncio.run_coroutine_threadsafe(
-                    wsManager.broadcast_after_client(
+                    wsManager.broadcast(
                         {
                             "type": "market_created",
                             "url": market_url,
@@ -144,7 +144,7 @@ def react(queue, riot_client=None, manifold_client=None):
             # --- GAME END / LISTENER STOP ---
             if event_name in ("GameEnd", "ListenerStopped"):
                 asyncio.run_coroutine_threadsafe(
-                    wsManager.broadcast_after_client({"type": "STOP"}),
+                    wsManager.broadcast({"type": "STOP"}),
                     event_loop,
                 )  # message to reset the front end page
                 print("Listener stopped. Waiting 45 seconds...")

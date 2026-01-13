@@ -1,0 +1,764 @@
+{
+    "activePlayer": {
+        "abilities": {
+            "E": {
+                "abilityLevel": 0,
+                "displayName": "Flame Breath",
+                "id": "ShyvanaFireball",
+                "rawDescription": "GeneratedTip_Spell_ShyvanaFireball_Description",
+                "rawDisplayName": "GeneratedTip_Spell_ShyvanaFireball_DisplayName"
+            },
+            "Passive": {
+                "displayName": "Fury of the Dragonborn",
+                "id": "ShyvanaPassive",
+                "rawDescription": "GeneratedTip_Passive_ShyvanaPassive_Description",
+                "rawDisplayName": "GeneratedTip_Passive_ShyvanaPassive_DisplayName"
+            },
+            "Q": {
+                "abilityLevel": 0,
+                "displayName": "Twin Bite",
+                "id": "ShyvanaDoubleAttack",
+                "rawDescription": "GeneratedTip_Spell_ShyvanaDoubleAttack_Description",
+                "rawDisplayName": "GeneratedTip_Spell_ShyvanaDoubleAttack_DisplayName"
+            },
+            "R": {
+                "abilityLevel": 0,
+                "displayName": "Dragon's Descent",
+                "id": "ShyvanaTransformCast",
+                "rawDescription": "GeneratedTip_Spell_ShyvanaTransformCast_Description",
+                "rawDisplayName": "GeneratedTip_Spell_ShyvanaTransformCast_DisplayName"
+            },
+            "W": {
+                "abilityLevel": 0,
+                "displayName": "Burnout",
+                "id": "ShyvanaImmolationAura",
+                "rawDescription": "GeneratedTip_Spell_ShyvanaImmolationAura_Description",
+                "rawDisplayName": "GeneratedTip_Spell_ShyvanaImmolationAura_DisplayName"
+            }
+        },
+        "championStats": {
+            "abilityHaste": 8.0,
+            "abilityPower": 0.0,
+            "armor": 43.0,
+            "armorPenetrationFlat": 0.0,
+            "armorPenetrationPercent": 1.0,
+            "attackDamage": 71.4000015258789,
+            "attackRange": 125.0,
+            "attackSpeed": 0.6579999923706055,
+            "bonusArmorPenetrationPercent": 1.0,
+            "bonusMagicPenetrationPercent": 1.0,
+            "critChance": 0.0,
+            "critDamage": 200.0,
+            "currentHealth": 675.0,
+            "healShieldPower": 0.0,
+            "healthRegenRate": 1.7000000476837158,
+            "lifeSteal": 0.0,
+            "magicLethality": 0.0,
+            "magicPenetrationFlat": 0.0,
+            "magicPenetrationPercent": 1.0,
+            "magicResist": 37.0,
+            "maxHealth": 675.0,
+            "moveSpeed": 545.0,
+            "omnivamp": 0.0,
+            "physicalLethality": 0.0,
+            "physicalVamp": 0.0,
+            "resourceMax": 100.0,
+            "resourceRegenRate": 0.0,
+            "resourceType": "DRAGONFURY",
+            "resourceValue": 0.0,
+            "spellVamp": 0.0,
+            "tenacity": 5.0
+        },
+        "currentGold": 500.0,
+        "fullRunes": {
+            "generalRunes": [
+                {
+                    "displayName": "First Strike",
+                    "id": 8369,
+                    "rawDescription": "perk_tooltip_FirstStrike",
+                    "rawDisplayName": "perk_displayname_FirstStrike"
+                },
+                {
+                    "displayName": "Magical Footwear",
+                    "id": 8304,
+                    "rawDescription": "perk_tooltip_MagicalFootwear",
+                    "rawDisplayName": "perk_displayname_MagicalFootwear"
+                },
+                {
+                    "displayName": "Triple Tonic",
+                    "id": 8313,
+                    "rawDescription": "perk_tooltip_PerfectTiming",
+                    "rawDisplayName": "perk_displayname_PerfectTiming"
+                },
+                {
+                    "displayName": "Cosmic Insight",
+                    "id": 8347,
+                    "rawDescription": "perk_tooltip_CosmicInsight",
+                    "rawDisplayName": "perk_displayname_CosmicInsight"
+                },
+                {
+                    "displayName": "Conditioning",
+                    "id": 8429,
+                    "rawDescription": "perk_tooltip_Conditioning",
+                    "rawDisplayName": "perk_displayname_Conditioning"
+                },
+                {
+                    "displayName": "Demolish",
+                    "id": 8446,
+                    "rawDescription": "perk_tooltip_8446",
+                    "rawDisplayName": "perk_displayname_8446"
+                }
+            ],
+            "keystone": {
+                "displayName": "First Strike",
+                "id": 8369,
+                "rawDescription": "perk_tooltip_FirstStrike",
+                "rawDisplayName": "perk_displayname_FirstStrike"
+            },
+            "primaryRuneTree": {
+                "displayName": "Inspiration",
+                "id": 8300,
+                "rawDescription": "perkstyle_tooltip_7203",
+                "rawDisplayName": "perkstyle_displayname_7203"
+            },
+            "secondaryRuneTree": {
+                "displayName": "Resolve",
+                "id": 8400,
+                "rawDescription": "perkstyle_tooltip_7204",
+                "rawDisplayName": "perkstyle_displayname_7204"
+            },
+            "statRunes": [
+                {
+                    "id": 5007,
+                    "rawDescription": "perk_tooltip_StatModCooldownReductionScaling"
+                },
+                {
+                    "id": 5008,
+                    "rawDescription": "perk_tooltip_StatModAdaptive"
+                },
+                {
+                    "id": 5001,
+                    "rawDescription": "perk_tooltip_StatModHealthScaling"
+                }
+            ]
+        },
+        "level": 1,
+        "riotId": "SirAgathon#NA1",
+        "riotIdGameName": "SirAgathon",
+        "riotIdTagLine": "NA1",
+        "summonerName": "Shyvana",
+        "teamRelativeColors": true
+    },
+    "allPlayers": [
+        {
+            "championName": "Shyvana",
+            "isBot": false,
+            "isDead": false,
+            "items": [],
+            "level": 1,
+            "position": "TOP",
+            "rawChampionName": "game_character_displayname_Shyvana",
+            "rawSkinName": "game_character_displayname_Shyvana",
+            "respawnTimer": 0.0,
+            "riotId": "SirAgathon#NA1",
+            "riotIdGameName": "SirAgathon",
+            "riotIdTagLine": "NA1",
+            "runes": {
+                "keystone": {
+                    "displayName": "First Strike",
+                    "id": 8369,
+                    "rawDescription": "perk_tooltip_FirstStrike",
+                    "rawDisplayName": "perk_displayname_FirstStrike"
+                },
+                "primaryRuneTree": {
+                    "displayName": "Inspiration",
+                    "id": 8300,
+                    "rawDescription": "perkstyle_tooltip_7203",
+                    "rawDisplayName": "perkstyle_displayname_7203"
+                },
+                "secondaryRuneTree": {
+                    "displayName": "Resolve",
+                    "id": 8400,
+                    "rawDescription": "perkstyle_tooltip_7204",
+                    "rawDisplayName": "perkstyle_displayname_7204"
+                }
+            },
+            "scores": {
+                "assists": 0,
+                "creepScore": 0,
+                "deaths": 0,
+                "kills": 0,
+                "wardScore": 0.0
+            },
+            "skinID": 0,
+            "skinName": "Shyvana",
+            "summonerName": "Shyvana",
+            "summonerSpells": {
+                "summonerSpellOne": {
+                    "displayName": "Teleport",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerTeleport_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerTeleport_DisplayName"
+                },
+                "summonerSpellTwo": {
+                    "displayName": "Flash",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+                }
+            },
+            "team": "ORDER"
+        },
+        {
+            "championName": "Sett",
+            "isBot": false,
+            "isDead": false,
+            "items": [],
+            "level": 1,
+            "position": "JUNGLE",
+            "rawChampionName": "game_character_displayname_Sett",
+            "rawSkinName": "game_character_displayname_Sett",
+            "respawnTimer": 0.0,
+            "riotId": "CLKark#10210",
+            "riotIdGameName": "CLKark",
+            "riotIdTagLine": "10210",
+            "runes": {
+                "keystone": {
+                    "displayName": "Conqueror",
+                    "id": 8010,
+                    "rawDescription": "perk_tooltip_Conqueror",
+                    "rawDisplayName": "perk_displayname_Conqueror"
+                },
+                "primaryRuneTree": {
+                    "displayName": "Precision",
+                    "id": 8000,
+                    "rawDescription": "perkstyle_tooltip_7201",
+                    "rawDisplayName": "perkstyle_displayname_7201"
+                },
+                "secondaryRuneTree": {
+                    "displayName": "Resolve",
+                    "id": 8400,
+                    "rawDescription": "perkstyle_tooltip_7204",
+                    "rawDisplayName": "perkstyle_displayname_7204"
+                }
+            },
+            "scores": {
+                "assists": 0,
+                "creepScore": 0,
+                "deaths": 0,
+                "kills": 0,
+                "wardScore": 0.0
+            },
+            "skinID": 0,
+            "skinName": "Sett",
+            "summonerName": "Sett",
+            "summonerSpells": {
+                "summonerSpellOne": {
+                    "displayName": "Flash",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+                },
+                "summonerSpellTwo": {
+                    "displayName": "Smite",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerSmite_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerSmite_DisplayName"
+                }
+            },
+            "team": "ORDER"
+        },
+        {
+            "championName": "Kassadin",
+            "isBot": false,
+            "isDead": false,
+            "items": [],
+            "level": 1,
+            "position": "MIDDLE",
+            "rawChampionName": "game_character_displayname_Kassadin",
+            "rawSkinName": "game_character_skin_displayname_Kassadin_5",
+            "respawnTimer": 0.0,
+            "riotId": "nanohana#TwT",
+            "riotIdGameName": "nanohana",
+            "riotIdTagLine": "TwT",
+            "runes": {
+                "keystone": {
+                    "displayName": "Electrocute",
+                    "id": 8112,
+                    "rawDescription": "perk_tooltip_Electrocute",
+                    "rawDisplayName": "perk_displayname_Electrocute"
+                },
+                "primaryRuneTree": {
+                    "displayName": "Domination",
+                    "id": 8100,
+                    "rawDescription": "perkstyle_tooltip_7200",
+                    "rawDisplayName": "perkstyle_displayname_7200"
+                },
+                "secondaryRuneTree": {
+                    "displayName": "Resolve",
+                    "id": 8400,
+                    "rawDescription": "perkstyle_tooltip_7204",
+                    "rawDisplayName": "perkstyle_displayname_7204"
+                }
+            },
+            "scores": {
+                "assists": 0,
+                "creepScore": 0,
+                "deaths": 0,
+                "kills": 0,
+                "wardScore": 0.0
+            },
+            "skinID": 5,
+            "skinName": "Cosmic Reaver Kassadin",
+            "summonerName": "Kassadin",
+            "summonerSpells": {
+                "summonerSpellOne": {
+                    "displayName": "Flash",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+                },
+                "summonerSpellTwo": {
+                    "displayName": "Teleport",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerTeleport_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerTeleport_DisplayName"
+                }
+            },
+            "team": "ORDER"
+        },
+        {
+            "championName": "Jinx",
+            "isBot": false,
+            "isDead": false,
+            "items": [],
+            "level": 1,
+            "position": "BOTTOM",
+            "rawChampionName": "game_character_displayname_Jinx",
+            "rawSkinName": "game_character_skin_displayname_Jinx_60",
+            "respawnTimer": 0.0,
+            "riotId": "YukaHatesGarlic#Vampz",
+            "riotIdGameName": "YukaHatesGarlic",
+            "riotIdTagLine": "Vampz",
+            "runes": {
+                "keystone": {
+                    "displayName": "Lethal Tempo",
+                    "id": 8008,
+                    "rawDescription": "perk_tooltip_LethalTempo",
+                    "rawDisplayName": "perk_displayname_LethalTempo"
+                },
+                "primaryRuneTree": {
+                    "displayName": "Precision",
+                    "id": 8000,
+                    "rawDescription": "perkstyle_tooltip_7201",
+                    "rawDisplayName": "perkstyle_displayname_7201"
+                },
+                "secondaryRuneTree": {
+                    "displayName": "Sorcery",
+                    "id": 8200,
+                    "rawDescription": "perkstyle_tooltip_7202",
+                    "rawDisplayName": "perkstyle_displayname_7202"
+                }
+            },
+            "scores": {
+                "assists": 0,
+                "creepScore": 0,
+                "deaths": 0,
+                "kills": 0,
+                "wardScore": 0.0
+            },
+            "skinID": 60,
+            "skinName": "Arcane Fractured Jinx",
+            "summonerName": "Jinx",
+            "summonerSpells": {
+                "summonerSpellOne": {
+                    "displayName": "Flash",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+                },
+                "summonerSpellTwo": {
+                    "displayName": "Barrier",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerBarrier_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerBarrier_DisplayName"
+                }
+            },
+            "team": "ORDER"
+        },
+        {
+            "championName": "Milio",
+            "isBot": false,
+            "isDead": false,
+            "items": [
+                {
+                    "canUse": false,
+                    "consumable": false,
+                    "count": 1,
+                    "displayName": "World Atlas",
+                    "itemID": 3865,
+                    "price": 400,
+                    "rawDescription": "GeneratedTip_Item_3865_Description",
+                    "rawDisplayName": "Item_3865_Name",
+                    "slot": 0
+                }
+            ],
+            "level": 1,
+            "position": "UTILITY",
+            "rawChampionName": "game_character_displayname_Milio",
+            "rawSkinName": "game_character_skin_displayname_Milio_1",
+            "respawnTimer": 0.0,
+            "riotId": "scny#NA1",
+            "riotIdGameName": "scny",
+            "riotIdTagLine": "NA1",
+            "runes": {
+                "keystone": {
+                    "displayName": "Guardian",
+                    "id": 8465,
+                    "rawDescription": "perk_tooltip_Guardian",
+                    "rawDisplayName": "perk_displayname_Guardian"
+                },
+                "primaryRuneTree": {
+                    "displayName": "Resolve",
+                    "id": 8400,
+                    "rawDescription": "perkstyle_tooltip_7204",
+                    "rawDisplayName": "perkstyle_displayname_7204"
+                },
+                "secondaryRuneTree": {
+                    "displayName": "Inspiration",
+                    "id": 8300,
+                    "rawDescription": "perkstyle_tooltip_7203",
+                    "rawDisplayName": "perkstyle_displayname_7203"
+                }
+            },
+            "scores": {
+                "assists": 0,
+                "creepScore": 0,
+                "deaths": 0,
+                "kills": 0,
+                "wardScore": 0.0
+            },
+            "skinID": 1,
+            "skinName": "Faerie Court Milio",
+            "summonerName": "Milio",
+            "summonerSpells": {
+                "summonerSpellOne": {
+                    "displayName": "Heal",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+                },
+                "summonerSpellTwo": {
+                    "displayName": "Flash",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+                }
+            },
+            "team": "ORDER"
+        },
+        {
+            "championName": "Jayce",
+            "isBot": false,
+            "isDead": false,
+            "items": [],
+            "level": 1,
+            "position": "TOP",
+            "rawChampionName": "game_character_displayname_Jayce",
+            "rawSkinName": "game_character_skin_displayname_Jayce_24",
+            "respawnTimer": 0.0,
+            "riotId": "Sad Cowboy#BATS",
+            "riotIdGameName": "Sad Cowboy",
+            "riotIdTagLine": "BATS",
+            "runes": {
+                "keystone": {
+                    "displayName": "First Strike",
+                    "id": 8369,
+                    "rawDescription": "perk_tooltip_FirstStrike",
+                    "rawDisplayName": "perk_displayname_FirstStrike"
+                },
+                "primaryRuneTree": {
+                    "displayName": "Inspiration",
+                    "id": 8300,
+                    "rawDescription": "perkstyle_tooltip_7203",
+                    "rawDisplayName": "perkstyle_displayname_7203"
+                },
+                "secondaryRuneTree": {
+                    "displayName": "Precision",
+                    "id": 8000,
+                    "rawDescription": "perkstyle_tooltip_7201",
+                    "rawDisplayName": "perkstyle_displayname_7201"
+                }
+            },
+            "scores": {
+                "assists": 0,
+                "creepScore": 0,
+                "deaths": 0,
+                "kills": 0,
+                "wardScore": 0.0
+            },
+            "skinID": 24,
+            "skinName": "Arcane Inventor Jayce",
+            "summonerName": "Jayce",
+            "summonerSpells": {
+                "summonerSpellOne": {
+                    "displayName": "Ghost",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerHaste_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHaste_DisplayName"
+                },
+                "summonerSpellTwo": {
+                    "displayName": "Flash",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+                }
+            },
+            "team": "CHAOS"
+        },
+        {
+            "championName": "Graves",
+            "isBot": false,
+            "isDead": false,
+            "items": [],
+            "level": 1,
+            "position": "JUNGLE",
+            "rawChampionName": "game_character_displayname_Graves",
+            "rawSkinName": "game_character_displayname_Graves",
+            "respawnTimer": 0.0,
+            "riotId": "Kemation#NA1",
+            "riotIdGameName": "Kemation",
+            "riotIdTagLine": "NA1",
+            "runes": {
+                "keystone": {
+                    "displayName": "Dark Harvest",
+                    "id": 8128,
+                    "rawDescription": "perk_tooltip_DarkHarvest",
+                    "rawDisplayName": "perk_displayname_DarkHarvest"
+                },
+                "primaryRuneTree": {
+                    "displayName": "Domination",
+                    "id": 8100,
+                    "rawDescription": "perkstyle_tooltip_7200",
+                    "rawDisplayName": "perkstyle_displayname_7200"
+                },
+                "secondaryRuneTree": {
+                    "displayName": "Precision",
+                    "id": 8000,
+                    "rawDescription": "perkstyle_tooltip_7201",
+                    "rawDisplayName": "perkstyle_displayname_7201"
+                }
+            },
+            "scores": {
+                "assists": 0,
+                "creepScore": 0,
+                "deaths": 0,
+                "kills": 0,
+                "wardScore": 0.0
+            },
+            "skinID": 0,
+            "skinName": "Graves",
+            "summonerName": "Graves",
+            "summonerSpells": {
+                "summonerSpellOne": {
+                    "displayName": "Smite",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerSmite_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerSmite_DisplayName"
+                },
+                "summonerSpellTwo": {
+                    "displayName": "Flash",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+                }
+            },
+            "team": "CHAOS"
+        },
+        {
+            "championName": "Diana",
+            "isBot": false,
+            "isDead": false,
+            "items": [],
+            "level": 1,
+            "position": "MIDDLE",
+            "rawChampionName": "game_character_displayname_Diana",
+            "rawSkinName": "game_character_skin_displayname_Diana_64",
+            "respawnTimer": 0.0,
+            "riotId": "TRuerrr#NA1",
+            "riotIdGameName": "TRuerrr",
+            "riotIdTagLine": "NA1",
+            "runes": {
+                "keystone": {
+                    "displayName": "Electrocute",
+                    "id": 8112,
+                    "rawDescription": "perk_tooltip_Electrocute",
+                    "rawDisplayName": "perk_displayname_Electrocute"
+                },
+                "primaryRuneTree": {
+                    "displayName": "Domination",
+                    "id": 8100,
+                    "rawDescription": "perkstyle_tooltip_7200",
+                    "rawDisplayName": "perkstyle_displayname_7200"
+                },
+                "secondaryRuneTree": {
+                    "displayName": "Resolve",
+                    "id": 8400,
+                    "rawDescription": "perkstyle_tooltip_7204",
+                    "rawDisplayName": "perkstyle_displayname_7204"
+                }
+            },
+            "scores": {
+                "assists": 0,
+                "creepScore": 0,
+                "deaths": 0,
+                "kills": 0,
+                "wardScore": 0.0
+            },
+            "skinID": 64,
+            "skinName": "Dark Cosmic Diana",
+            "summonerName": "Diana",
+            "summonerSpells": {
+                "summonerSpellOne": {
+                    "displayName": "Flash",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+                },
+                "summonerSpellTwo": {
+                    "displayName": "Ignite",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+                }
+            },
+            "team": "CHAOS"
+        },
+        {
+            "championName": "Jhin",
+            "isBot": false,
+            "isDead": false,
+            "items": [],
+            "level": 1,
+            "position": "BOTTOM",
+            "rawChampionName": "game_character_displayname_Jhin",
+            "rawSkinName": "game_character_skin_displayname_Jhin_42",
+            "respawnTimer": 0.0,
+            "riotId": "XxPDineroxX#9338",
+            "riotIdGameName": "XxPDineroxX",
+            "riotIdTagLine": "9338",
+            "runes": {
+                "keystone": {
+                    "displayName": "Fleet Footwork",
+                    "id": 8021,
+                    "rawDescription": "perk_tooltip_FleetFootwork",
+                    "rawDisplayName": "perk_displayname_FleetFootwork"
+                },
+                "primaryRuneTree": {
+                    "displayName": "Precision",
+                    "id": 8000,
+                    "rawDescription": "perkstyle_tooltip_7201",
+                    "rawDisplayName": "perkstyle_displayname_7201"
+                },
+                "secondaryRuneTree": {
+                    "displayName": "Domination",
+                    "id": 8100,
+                    "rawDescription": "perkstyle_tooltip_7200",
+                    "rawDisplayName": "perkstyle_displayname_7200"
+                }
+            },
+            "scores": {
+                "assists": 0,
+                "creepScore": 0,
+                "deaths": 0,
+                "kills": 0,
+                "wardScore": 0.0
+            },
+            "skinID": 42,
+            "skinName": "Soul Fighter Jhin (Sapphire)",
+            "summonerName": "Jhin",
+            "summonerSpells": {
+                "summonerSpellOne": {
+                    "displayName": "Flash",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+                },
+                "summonerSpellTwo": {
+                    "displayName": "Barrier",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerBarrier_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerBarrier_DisplayName"
+                }
+            },
+            "team": "CHAOS"
+        },
+        {
+            "championName": "Galio",
+            "isBot": false,
+            "isDead": false,
+            "items": [
+                {
+                    "canUse": false,
+                    "consumable": false,
+                    "count": 1,
+                    "displayName": "World Atlas",
+                    "itemID": 3865,
+                    "price": 400,
+                    "rawDescription": "GeneratedTip_Item_3865_Description",
+                    "rawDisplayName": "Item_3865_Name",
+                    "slot": 0
+                }
+            ],
+            "level": 1,
+            "position": "UTILITY",
+            "rawChampionName": "game_character_displayname_Galio",
+            "rawSkinName": "game_character_skin_displayname_Galio_28",
+            "respawnTimer": 0.0,
+            "riotId": "JediguyTWhy#NA1",
+            "riotIdGameName": "JediguyTWhy",
+            "riotIdTagLine": "NA1",
+            "runes": {
+                "keystone": {
+                    "displayName": "Aftershock",
+                    "id": 8439,
+                    "rawDescription": "perk_tooltip_VeteranAftershock",
+                    "rawDisplayName": "perk_displayname_VeteranAftershock"
+                },
+                "primaryRuneTree": {
+                    "displayName": "Resolve",
+                    "id": 8400,
+                    "rawDescription": "perkstyle_tooltip_7204",
+                    "rawDisplayName": "perkstyle_displayname_7204"
+                },
+                "secondaryRuneTree": {
+                    "displayName": "Sorcery",
+                    "id": 8200,
+                    "rawDescription": "perkstyle_tooltip_7202",
+                    "rawDisplayName": "perkstyle_displayname_7202"
+                }
+            },
+            "scores": {
+                "assists": 0,
+                "creepScore": 0,
+                "deaths": 0,
+                "kills": 0,
+                "wardScore": 0.0
+            },
+            "skinID": 28,
+            "skinName": "Mythmaker Galio",
+            "summonerName": "Galio",
+            "summonerSpells": {
+                "summonerSpellOne": {
+                    "displayName": "Flash",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+                },
+                "summonerSpellTwo": {
+                    "displayName": "Heal",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+                }
+            },
+            "team": "CHAOS"
+        }
+    ],
+    "events": {
+        "Events": [
+            {
+                "EventID": 0,
+                "EventName": "GameStart",
+                "EventTime": 0.05655049905180931
+            }
+        ]
+    },
+    "gameData": {
+        "gameMode": "CLASSIC",
+        "gameTime": 4.183625221252441,
+        "mapName": "Map11",
+        "mapNumber": 11,
+        "mapTerrain": "Default"
+    }
+}
