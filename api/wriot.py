@@ -278,35 +278,3 @@ def verify_match(start_time_ms: float, end_time_ms: float, match_info: Dict) -> 
         #     f"our window ({start_time_ms-buffer_ms}, {start_time_ms+buffer_ms})."
         # )
         return False
-
-
-if __name__ == "__main__":
-    client = RiotClient()
-    listener = LoLEventListener()
-    listener.listen()  #  current match start time and end time
-
-    print("Listener finished. Waiting before retrieving match data...")
-    time.sleep(45)  # Wait 45 seconds before fetching match data
-
-    resolved = False
-    while not resolved:
-        matchInfo = (
-            client.get_recent_match()
-        )  # Fetch recent match data after listening for events
-
-        # verify match is the same as the one we listened to
-        is_valid_match = verify_match(
-            listener.start_time,
-            listener.end_time,
-            matchInfo.get("info", {}),
-        )
-
-        if is_valid_match:
-            # Return the game result
-            print("Win:", client.get_game_result(matchInfo))
-            resolved = True
-        else:
-            # Wait 30 seconds and try again
-            print("Match verification failed. Retrying in 30 seconds...")
-            time.sleep(30)
-    # END

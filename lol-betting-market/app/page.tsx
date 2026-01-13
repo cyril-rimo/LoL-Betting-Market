@@ -11,7 +11,7 @@ export default function HomePage() {
     function connect() {
       ws = new WebSocket("ws://localhost:8000/ws");
 
-      window.ws = ws; // for console debugging
+      //window.ws = ws; // for console debugging
 
       ws.onopen = () => {
         console.log("WebSocket connected");
