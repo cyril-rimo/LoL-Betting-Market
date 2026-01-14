@@ -10,11 +10,40 @@
 
 import { DurableObject } from "cloudflare:workers";
 
+const CORS_HEADERS = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type, X-Type",
+};
+
+function handleOptions(request) {
+  // Handle CORS preflight
+  if (
+    request.headers.get("Origin") &&
+    request.headers.get("Access-Control-Request-Method")
+  ) {
+    return new Response(null, {
+      status: 204,
+      headers: CORS_HEADERS,
+    });
+  }
+
+  // Standard OPTIONS
+  return new Response(null, {
+    headers: {
+      Allow: "GET, POST, OPTIONS",
+    },
+  });
+}
+
 // This class acts as your "Hub"
 export class MarketBroadcaster extends DurableObject {
   constructor(ctx, env) {
     super(ctx, env);
-    // ctx.storage.sql is available on both Free and Paid plans in 2026
+
+    // For simple display of marketURL, this is unnecessary.
+    // Table for WebSocket events (your existing logic)
+    /*
     this.ctx.storage.sql.exec(`
       CREATE TABLE IF NOT EXISTS events (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -22,49 +51,116 @@ export class MarketBroadcaster extends DurableObject {
         timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
       )
     `);
+    */ 
+
+    // NEW: Table for match history
+    this.ctx.storage.sql.exec(`
+      CREATE TABLE IF NOT EXISTS matches (
+        id TEXT PRIMARY KEY,
+        data TEXT,
+        timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+      )
+    `);
   }
 
   async fetch(request) {
+    const url = new URL(request.url);
     const upgradeHeader = request.headers.get("Upgrade");
 
-    // FRONTEND: Handles WebSocket connections from your Cloudflare Page
+    // -------------------------------
+    // 0. OPTIONS — CORS preflight
+    // -------------------------------
+    if (request.method === "OPTIONS") {
+      return handleOptions(request);
+    }
+
+    // -------------------------------
+    // 1. WebSocket connections (unchanged)
+    // -------------------------------
     if (upgradeHeader === "websocket") {
       const pair = new WebSocketPair();
       const [client, server] = Object.values(pair);
 
-      // Connect the client and store the session
       this.ctx.acceptWebSocket(server);
-      
       return new Response(null, { status: 101, webSocket: client });
     }
 
-    // BACKEND: Handles POST requests from your Python script
+    // -------------------------------
+    // 2. Collector pushes match data
+    // -------------------------------
+    if (request.method === "POST" && request.headers.get("X-Type") === "match") {
+      const payload = await request.text();
+      const match = JSON.parse(payload);
+      const matchId = match.metadata.matchId;
+
+      // Insert or replace match
+      this.ctx.storage.sql.exec(
+        "INSERT OR REPLACE INTO matches (id, data) VALUES (?, ?)",
+        matchId,
+        payload
+      );
+
+      // Keep only last 10 matches
+      this.ctx.storage.sql.exec(`
+        DELETE FROM matches
+        WHERE id NOT IN (
+          SELECT id FROM matches ORDER BY timestamp DESC LIMIT 10
+        )
+      `);
+
+      return new Response("Match saved", { status: 200 });
+    }
+
+    // -------------------------------
+    // 3. Frontend fetches last 10 matches
+    // -------------------------------
+    if (request.method === "GET" && url.pathname === "/matches/latest") {
+      const result = this.ctx.storage.sql.exec(
+        "SELECT data FROM matches ORDER BY timestamp DESC LIMIT 10"
+      );
+
+      const rows = result.results || [];
+      const matches = rows.map(r => JSON.parse(r.data));
+
+      return new Response(JSON.stringify(matches), {
+        headers: { "Content-Type": "application/json" }
+      });
+    }
+
+    // -------------------------------
+    // 4. Existing POST for event broadcasting
+    // -------------------------------
     if (request.method === "POST") {
       const payload = await request.text();
 
-      // 1. Save to SQLite so history persists if a user refreshes
-      this.ctx.storage.sql.exec("INSERT INTO events (data) VALUES (?)", payload);
+      // if using events table from above
+      // Save event
+      /*
+      this.ctx.storage.sql.exec(
+        "INSERT INTO events (data) VALUES (?)",
+        payload
+      );
+      */
 
-      // 2. Broadcast to all active browser tabs
+      // Broadcast to all connected clients
       this.ctx.getWebSockets().forEach(ws => {
         try {
           ws.send(payload);
         } catch (e) {
-          // Clean up closed connections
+          // Ignore closed sockets
         }
       });
 
-      return new Response("Broadcasted", { status: 200 });
+      return new Response("Broadcasted", { status: 200 , headers: CORS_HEADERS });
     }
 
-    return new Response("Expected WebSocket or POST", { status: 400 });
+    return new Response("Expected WebSocket, POST, or /matches/latest", { status: 400 , headers: CORS_HEADERS });
   }
 }
 
-// This is the "Entry Point" that directs everyone to the Hub
+// Entry point that routes all requests to the DO
 export default {
   async fetch(request, env) {
-    // We use a fixed ID so everyone joins the same room
     const id = env.MARKET_HUB.idFromName("global-market");
     const stub = env.MARKET_HUB.get(id);
     return stub.fetch(request);
