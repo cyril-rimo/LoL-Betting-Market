@@ -12,7 +12,7 @@ export default function HistoryPage() {
   useEffect(() => {
     async function load() {
       try {
-        const res = await fetch(`${WORKER_URL}/matches/latest`, {
+        const res = await fetch(`${WORKER_URL}matches/latest`, { // slash at the end of the websocket URL
           cache: "no-store"
         });
         const data = await res.json();
