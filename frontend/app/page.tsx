@@ -8,7 +8,7 @@ export default function HomePage() {
   useEffect(() => {
     let ws: WebSocket | null = null;
     // Replace with your actual Worker URL
-    const WORKER_URL = process.env.NEXT_PUBLIC_WORKER_URL;
+    const WORKER_URL = process.env.NEXT_PUBLIC_WORKER_URL || "https://market-relay.cyril-rimo.workers.dev/";
 
     function connect() {
       ws = new WebSocket(WORKER_URL);
