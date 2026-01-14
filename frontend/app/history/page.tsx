@@ -1,34 +1,44 @@
+"use client";
+
+import MatchHistory from "@/app/components/MatchHistory";
+import { useEffect, useState } from "react";
+
 export default function HistoryPage() {
+  const [matches, setMatches] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const WORKER_URL = process.env.NEXT_PUBLIC_WORKER_URL;
+
+  useEffect(() => {
+    async function load() {
+      try {
+        const res = await fetch(`${WORKER_URL}/matches/latest`, {
+          cache: "no-store"
+        });
+        const data = await res.json();
+        setMatches(data);
+      } catch (err) {
+        console.error("Failed to fetch match history:", err);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    load();
+  }, [WORKER_URL]);
+
+  if (loading) {
+    return (
+      <div className="p-6 text-gray-400">
+        Loading match history…
+      </div>
+    );
+  }
+
   return (
-    <main className="p-8 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-4">Betting History</h1>
-      <p className="text-gray-600 mb-8">
-        Review your past bets, settled markets, and match outcomes.
-      </p>
-
-      {/* Summary Section */}
-      <section className="mb-12">
-        <h2 className="text-xl font-semibold mb-2">Summary</h2>
-        <div className="border rounded p-6 text-gray-500">
-          <p>Your profit/loss summary will appear here.</p>
-        </div>
-      </section>
-
-      {/* Past Bets */}
-      <section className="mb-12">
-        <h2 className="text-xl font-semibold mb-2">Past Bets</h2>
-        <div className="border rounded p-6 text-gray-500">
-          <p>Historical bet data will appear here once integrated.</p>
-        </div>
-      </section>
-
-      {/* Settled Markets */}
-      <section>
-        <h2 className="text-xl font-semibold mb-2">Settled Markets</h2>
-        <div className="border rounded p-6 text-gray-500">
-          <p>Market outcomes and resolved predictions will appear here.</p>
-        </div>
-      </section>
-    </main>
+    <div className="p-6">
+      <h1 className="text-xl font-bold mb-4 text-center">Match History</h1>
+      <MatchHistory initialMatches={matches} />
+    </div>
   );
 }
