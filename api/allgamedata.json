@@ -37,7 +37,7 @@
             }
         },
         "championStats": {
-            "abilityHaste": 8.0,
+            "abilityHaste": 0.0,
             "abilityPower": 0.0,
             "armor": 43.0,
             "armorPenetrationFlat": 0.0,
@@ -49,7 +49,7 @@
             "bonusMagicPenetrationPercent": 1.0,
             "critChance": 0.0,
             "critDamage": 200.0,
-            "currentHealth": 675.0,
+            "currentHealth": 730.0,
             "healShieldPower": 0.0,
             "healthRegenRate": 1.7000000476837158,
             "lifeSteal": 0.0,
@@ -57,8 +57,8 @@
             "magicPenetrationFlat": 0.0,
             "magicPenetrationPercent": 1.0,
             "magicResist": 37.0,
-            "maxHealth": 675.0,
-            "moveSpeed": 545.0,
+            "maxHealth": 730.0,
+            "moveSpeed": 855.625,
             "omnivamp": 0.0,
             "physicalLethality": 0.0,
             "physicalVamp": 0.0,
@@ -85,10 +85,10 @@
                     "rawDisplayName": "perk_displayname_MagicalFootwear"
                 },
                 {
-                    "displayName": "Triple Tonic",
-                    "id": 8313,
-                    "rawDescription": "perk_tooltip_PerfectTiming",
-                    "rawDisplayName": "perk_displayname_PerfectTiming"
+                    "displayName": "Biscuit Delivery",
+                    "id": 8345,
+                    "rawDescription": "perk_tooltip_BiscuitDelivery",
+                    "rawDisplayName": "perk_displayname_BiscuitDelivery"
                 },
                 {
                     "displayName": "Cosmic Insight",
@@ -129,16 +129,16 @@
             },
             "statRunes": [
                 {
-                    "id": 5007,
-                    "rawDescription": "perk_tooltip_StatModCooldownReductionScaling"
-                },
-                {
                     "id": 5008,
                     "rawDescription": "perk_tooltip_StatModAdaptive"
                 },
                 {
-                    "id": 5001,
-                    "rawDescription": "perk_tooltip_StatModHealthScaling"
+                    "id": 5010,
+                    "rawDescription": "perk_tooltip_StatModMovementSpeed"
+                },
+                {
+                    "id": 5011,
+                    "rawDescription": "perk_tooltip_StatModHealth"
                 }
             ]
         },
@@ -150,6 +150,291 @@
         "teamRelativeColors": true
     },
     "allPlayers": [
+        {
+            "championName": "Gangplank",
+            "isBot": false,
+            "isDead": false,
+            "items": [],
+            "level": 1,
+            "position": "TOP",
+            "rawChampionName": "game_character_displayname_Gangplank",
+            "rawSkinName": "game_character_skin_displayname_Gangplank_1",
+            "respawnTimer": 0.0,
+            "riotId": "skrip1#NA1",
+            "riotIdGameName": "skrip1",
+            "riotIdTagLine": "NA1",
+            "runes": {
+                "keystone": {
+                    "displayName": "Arcane Comet",
+                    "id": 8229,
+                    "rawDescription": "perk_tooltip_ArcaneComet",
+                    "rawDisplayName": "perk_displayname_ArcaneComet"
+                },
+                "primaryRuneTree": {
+                    "displayName": "Sorcery",
+                    "id": 8200,
+                    "rawDescription": "perkstyle_tooltip_7202",
+                    "rawDisplayName": "perkstyle_displayname_7202"
+                },
+                "secondaryRuneTree": {
+                    "displayName": "Resolve",
+                    "id": 8400,
+                    "rawDescription": "perkstyle_tooltip_7204",
+                    "rawDisplayName": "perkstyle_displayname_7204"
+                }
+            },
+            "scores": {
+                "assists": 0,
+                "creepScore": 0,
+                "deaths": 0,
+                "kills": 0,
+                "wardScore": 0.0
+            },
+            "skinID": 1,
+            "skinName": "Spooky Gangplank",
+            "summonerName": "Gangplank",
+            "summonerSpells": {
+                "summonerSpellOne": {
+                    "displayName": "Ignite",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+                },
+                "summonerSpellTwo": {
+                    "displayName": "Flash",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+                }
+            },
+            "team": "ORDER"
+        },
+        {
+            "championName": "Dr. Mundo",
+            "isBot": false,
+            "isDead": false,
+            "items": [],
+            "level": 1,
+            "position": "JUNGLE",
+            "rawChampionName": "game_character_displayname_DrMundo",
+            "rawSkinName": "game_character_displayname_DrMundo",
+            "respawnTimer": 0.0,
+            "riotId": "BLUNTMAN840#NA1",
+            "riotIdGameName": "BLUNTMAN840",
+            "riotIdTagLine": "NA1",
+            "runes": {
+                "keystone": {
+                    "displayName": "Fleet Footwork",
+                    "id": 8021,
+                    "rawDescription": "perk_tooltip_FleetFootwork",
+                    "rawDisplayName": "perk_displayname_FleetFootwork"
+                },
+                "primaryRuneTree": {
+                    "displayName": "Precision",
+                    "id": 8000,
+                    "rawDescription": "perkstyle_tooltip_7201",
+                    "rawDisplayName": "perkstyle_displayname_7201"
+                },
+                "secondaryRuneTree": {
+                    "displayName": "Inspiration",
+                    "id": 8300,
+                    "rawDescription": "perkstyle_tooltip_7203",
+                    "rawDisplayName": "perkstyle_displayname_7203"
+                }
+            },
+            "scores": {
+                "assists": 0,
+                "creepScore": 0,
+                "deaths": 0,
+                "kills": 0,
+                "wardScore": 0.0
+            },
+            "skinID": 0,
+            "skinName": "Dr. Mundo",
+            "summonerName": "Dr. Mundo",
+            "summonerSpells": {
+                "summonerSpellOne": {
+                    "displayName": "Smite",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerSmite_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerSmite_DisplayName"
+                },
+                "summonerSpellTwo": {
+                    "displayName": "Flash",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+                }
+            },
+            "team": "ORDER"
+        },
+        {
+            "championName": "Kalista",
+            "isBot": false,
+            "isDead": false,
+            "items": [],
+            "level": 1,
+            "position": "MIDDLE",
+            "rawChampionName": "game_character_displayname_Kalista",
+            "rawSkinName": "game_character_skin_displayname_Kalista_1",
+            "respawnTimer": 0.0,
+            "riotId": "omniwave88#NA1",
+            "riotIdGameName": "omniwave88",
+            "riotIdTagLine": "NA1",
+            "runes": {
+                "keystone": {
+                    "displayName": "Lethal Tempo",
+                    "id": 8008,
+                    "rawDescription": "perk_tooltip_LethalTempo",
+                    "rawDisplayName": "perk_displayname_LethalTempo"
+                },
+                "primaryRuneTree": {
+                    "displayName": "Precision",
+                    "id": 8000,
+                    "rawDescription": "perkstyle_tooltip_7201",
+                    "rawDisplayName": "perkstyle_displayname_7201"
+                },
+                "secondaryRuneTree": {
+                    "displayName": "Domination",
+                    "id": 8100,
+                    "rawDescription": "perkstyle_tooltip_7200",
+                    "rawDisplayName": "perkstyle_displayname_7200"
+                }
+            },
+            "scores": {
+                "assists": 0,
+                "creepScore": 0,
+                "deaths": 0,
+                "kills": 0,
+                "wardScore": 0.0
+            },
+            "skinID": 1,
+            "skinName": "Blood Moon Kalista",
+            "summonerName": "Kalista",
+            "summonerSpells": {
+                "summonerSpellOne": {
+                    "displayName": "Flash",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+                },
+                "summonerSpellTwo": {
+                    "displayName": "Heal",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+                }
+            },
+            "team": "ORDER"
+        },
+        {
+            "championName": "Samira",
+            "isBot": false,
+            "isDead": false,
+            "items": [],
+            "level": 1,
+            "position": "BOTTOM",
+            "rawChampionName": "game_character_displayname_Samira",
+            "rawSkinName": "game_character_skin_displayname_Samira_3",
+            "respawnTimer": 0.0,
+            "riotId": "TayeNation#NA1",
+            "riotIdGameName": "TayeNation",
+            "riotIdTagLine": "NA1",
+            "runes": {
+                "keystone": {
+                    "displayName": "Conqueror",
+                    "id": 8010,
+                    "rawDescription": "perk_tooltip_Conqueror",
+                    "rawDisplayName": "perk_displayname_Conqueror"
+                },
+                "primaryRuneTree": {
+                    "displayName": "Precision",
+                    "id": 8000,
+                    "rawDescription": "perkstyle_tooltip_7201",
+                    "rawDisplayName": "perkstyle_displayname_7201"
+                },
+                "secondaryRuneTree": {
+                    "displayName": "Resolve",
+                    "id": 8400,
+                    "rawDescription": "perkstyle_tooltip_7204",
+                    "rawDisplayName": "perkstyle_displayname_7204"
+                }
+            },
+            "scores": {
+                "assists": 0,
+                "creepScore": 0,
+                "deaths": 0,
+                "kills": 0,
+                "wardScore": 0.0
+            },
+            "skinID": 3,
+            "skinName": "PsyOps Samira (Sapphire)",
+            "summonerName": "Samira",
+            "summonerSpells": {
+                "summonerSpellOne": {
+                    "displayName": "Flash",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+                },
+                "summonerSpellTwo": {
+                    "displayName": "Heal",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+                }
+            },
+            "team": "ORDER"
+        },
+        {
+            "championName": "Lissandra",
+            "isBot": false,
+            "isDead": false,
+            "items": [],
+            "level": 1,
+            "position": "UTILITY",
+            "rawChampionName": "game_character_displayname_Lissandra",
+            "rawSkinName": "game_character_displayname_Lissandra",
+            "respawnTimer": 0.0,
+            "riotId": "#",
+            "riotIdGameName": "",
+            "riotIdTagLine": "",
+            "runes": {
+                "keystone": {
+                    "displayName": "Aftershock",
+                    "id": 8439,
+                    "rawDescription": "perk_tooltip_VeteranAftershock",
+                    "rawDisplayName": "perk_displayname_VeteranAftershock"
+                },
+                "primaryRuneTree": {
+                    "displayName": "Resolve",
+                    "id": 8400,
+                    "rawDescription": "perkstyle_tooltip_7204",
+                    "rawDisplayName": "perkstyle_displayname_7204"
+                },
+                "secondaryRuneTree": {
+                    "displayName": "Sorcery",
+                    "id": 8200,
+                    "rawDescription": "perkstyle_tooltip_7202",
+                    "rawDisplayName": "perkstyle_displayname_7202"
+                }
+            },
+            "scores": {
+                "assists": 0,
+                "creepScore": 0,
+                "deaths": 0,
+                "kills": 0,
+                "wardScore": 0.0
+            },
+            "skinID": 0,
+            "skinName": "Lissandra",
+            "summonerName": "Lissandra",
+            "summonerSpells": {
+                "summonerSpellOne": {
+                    "displayName": "Flash",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+                },
+                "summonerSpellTwo": {
+                    "displayName": "Ignite",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+                }
+            },
+            "team": "ORDER"
+        },
         {
             "championName": "Shyvana",
             "isBot": false,
@@ -195,9 +480,9 @@
             "summonerName": "Shyvana",
             "summonerSpells": {
                 "summonerSpellOne": {
-                    "displayName": "Teleport",
-                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerTeleport_Description",
-                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerTeleport_DisplayName"
+                    "displayName": "Barrier",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerBarrier_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerBarrier_DisplayName"
                 },
                 "summonerSpellTwo": {
                     "displayName": "Flash",
@@ -205,21 +490,135 @@
                     "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
                 }
             },
-            "team": "ORDER"
+            "team": "CHAOS"
         },
         {
-            "championName": "Sett",
+            "championName": "Talon",
             "isBot": false,
             "isDead": false,
-            "items": [],
+            "items": [
+                {
+                    "canUse": false,
+                    "consumable": false,
+                    "count": 1,
+                    "displayName": "Gustwalker Hatchling",
+                    "itemID": 1102,
+                    "price": 450,
+                    "rawDescription": "GeneratedTip_Item_1102_Description",
+                    "rawDisplayName": "Item_1102_Name",
+                    "slot": 0
+                },
+                {
+                    "canUse": true,
+                    "consumable": true,
+                    "count": 1,
+                    "displayName": "Health Potion",
+                    "itemID": 2003,
+                    "price": 50,
+                    "rawDescription": "GeneratedTip_Item_2003_Description",
+                    "rawDisplayName": "Item_2003_Name",
+                    "slot": 1
+                },
+                {
+                    "canUse": true,
+                    "consumable": false,
+                    "count": 1,
+                    "displayName": "Stealth Ward",
+                    "itemID": 3340,
+                    "price": 0,
+                    "rawDescription": "GeneratedTip_Item_3340_Description",
+                    "rawDisplayName": "Item_3340_Name",
+                    "slot": 6
+                }
+            ],
             "level": 1,
             "position": "JUNGLE",
-            "rawChampionName": "game_character_displayname_Sett",
-            "rawSkinName": "game_character_displayname_Sett",
+            "rawChampionName": "game_character_displayname_Talon",
+            "rawSkinName": "game_character_skin_displayname_Talon_20",
             "respawnTimer": 0.0,
-            "riotId": "CLKark#10210",
-            "riotIdGameName": "CLKark",
-            "riotIdTagLine": "10210",
+            "riotId": "IAMATROLLDODGE#NA1",
+            "riotIdGameName": "IAMATROLLDODGE",
+            "riotIdTagLine": "NA1",
+            "runes": {
+                "keystone": {
+                    "displayName": "Conqueror",
+                    "id": 8010,
+                    "rawDescription": "perk_tooltip_Conqueror",
+                    "rawDisplayName": "perk_displayname_Conqueror"
+                },
+                "primaryRuneTree": {
+                    "displayName": "Precision",
+                    "id": 8000,
+                    "rawDescription": "perkstyle_tooltip_7201",
+                    "rawDisplayName": "perkstyle_displayname_7201"
+                },
+                "secondaryRuneTree": {
+                    "displayName": "Resolve",
+                    "id": 8400,
+                    "rawDescription": "perkstyle_tooltip_7204",
+                    "rawDisplayName": "perkstyle_displayname_7204"
+                }
+            },
+            "scores": {
+                "assists": 0,
+                "creepScore": 0,
+                "deaths": 0,
+                "kills": 0,
+                "wardScore": 0.0
+            },
+            "skinID": 20,
+            "skinName": "Talon Blackwood",
+            "summonerName": "Talon",
+            "summonerSpells": {
+                "summonerSpellOne": {
+                    "displayName": "Flash",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+                },
+                "summonerSpellTwo": {
+                    "displayName": "Smite",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerSmite_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerSmite_DisplayName"
+                }
+            },
+            "team": "CHAOS"
+        },
+        {
+            "championName": "Swain",
+            "isBot": false,
+            "isDead": false,
+            "items": [
+                {
+                    "canUse": false,
+                    "consumable": false,
+                    "count": 1,
+                    "displayName": "Tear of the Goddess",
+                    "itemID": 3070,
+                    "price": 400,
+                    "rawDescription": "GeneratedTip_Item_3070_Description",
+                    "rawDisplayName": "Item_3070_Name",
+                    "slot": 0
+                },
+                {
+                    "canUse": true,
+                    "consumable": true,
+                    "count": 2,
+                    "displayName": "Health Potion",
+                    "itemID": 2003,
+                    "price": 50,
+                    "rawDescription": "GeneratedTip_Item_2003_Description",
+                    "rawDisplayName": "Item_2003_Name",
+                    "slot": 1
+                }
+            ],
+            "level": 1,
+            "position": "MIDDLE",
+            "rawChampionName": "game_character_displayname_Swain",
+            "rawSkinName": "game_character_displayname_Swain",
+            "respawnTimer": 0.0,
+            "riotId": "Tonkos#0000",
+            "riotIdGameName": "Tonkos",
+            "riotIdTagLine": "0000",
             "runes": {
                 "keystone": {
                     "displayName": "Conqueror",
@@ -248,138 +647,24 @@
                 "wardScore": 0.0
             },
             "skinID": 0,
-            "skinName": "Sett",
-            "summonerName": "Sett",
+            "skinName": "Swain",
+            "summonerName": "Swain",
             "summonerSpells": {
                 "summonerSpellOne": {
-                    "displayName": "Flash",
-                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
-                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
-                },
-                "summonerSpellTwo": {
-                    "displayName": "Smite",
-                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerSmite_Description",
-                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerSmite_DisplayName"
-                }
-            },
-            "team": "ORDER"
-        },
-        {
-            "championName": "Kassadin",
-            "isBot": false,
-            "isDead": false,
-            "items": [],
-            "level": 1,
-            "position": "MIDDLE",
-            "rawChampionName": "game_character_displayname_Kassadin",
-            "rawSkinName": "game_character_skin_displayname_Kassadin_5",
-            "respawnTimer": 0.0,
-            "riotId": "nanohana#TwT",
-            "riotIdGameName": "nanohana",
-            "riotIdTagLine": "TwT",
-            "runes": {
-                "keystone": {
-                    "displayName": "Electrocute",
-                    "id": 8112,
-                    "rawDescription": "perk_tooltip_Electrocute",
-                    "rawDisplayName": "perk_displayname_Electrocute"
-                },
-                "primaryRuneTree": {
-                    "displayName": "Domination",
-                    "id": 8100,
-                    "rawDescription": "perkstyle_tooltip_7200",
-                    "rawDisplayName": "perkstyle_displayname_7200"
-                },
-                "secondaryRuneTree": {
-                    "displayName": "Resolve",
-                    "id": 8400,
-                    "rawDescription": "perkstyle_tooltip_7204",
-                    "rawDisplayName": "perkstyle_displayname_7204"
-                }
-            },
-            "scores": {
-                "assists": 0,
-                "creepScore": 0,
-                "deaths": 0,
-                "kills": 0,
-                "wardScore": 0.0
-            },
-            "skinID": 5,
-            "skinName": "Cosmic Reaver Kassadin",
-            "summonerName": "Kassadin",
-            "summonerSpells": {
-                "summonerSpellOne": {
-                    "displayName": "Flash",
-                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
-                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
-                },
-                "summonerSpellTwo": {
                     "displayName": "Teleport",
                     "rawDescription": "GeneratedTip_SummonerSpell_SummonerTeleport_Description",
                     "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerTeleport_DisplayName"
-                }
-            },
-            "team": "ORDER"
-        },
-        {
-            "championName": "Jinx",
-            "isBot": false,
-            "isDead": false,
-            "items": [],
-            "level": 1,
-            "position": "BOTTOM",
-            "rawChampionName": "game_character_displayname_Jinx",
-            "rawSkinName": "game_character_skin_displayname_Jinx_60",
-            "respawnTimer": 0.0,
-            "riotId": "YukaHatesGarlic#Vampz",
-            "riotIdGameName": "YukaHatesGarlic",
-            "riotIdTagLine": "Vampz",
-            "runes": {
-                "keystone": {
-                    "displayName": "Lethal Tempo",
-                    "id": 8008,
-                    "rawDescription": "perk_tooltip_LethalTempo",
-                    "rawDisplayName": "perk_displayname_LethalTempo"
                 },
-                "primaryRuneTree": {
-                    "displayName": "Precision",
-                    "id": 8000,
-                    "rawDescription": "perkstyle_tooltip_7201",
-                    "rawDisplayName": "perkstyle_displayname_7201"
-                },
-                "secondaryRuneTree": {
-                    "displayName": "Sorcery",
-                    "id": 8200,
-                    "rawDescription": "perkstyle_tooltip_7202",
-                    "rawDisplayName": "perkstyle_displayname_7202"
-                }
-            },
-            "scores": {
-                "assists": 0,
-                "creepScore": 0,
-                "deaths": 0,
-                "kills": 0,
-                "wardScore": 0.0
-            },
-            "skinID": 60,
-            "skinName": "Arcane Fractured Jinx",
-            "summonerName": "Jinx",
-            "summonerSpells": {
-                "summonerSpellOne": {
+                "summonerSpellTwo": {
                     "displayName": "Flash",
                     "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
                     "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
-                },
-                "summonerSpellTwo": {
-                    "displayName": "Barrier",
-                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerBarrier_Description",
-                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerBarrier_DisplayName"
                 }
             },
-            "team": "ORDER"
+            "team": "CHAOS"
         },
         {
-            "championName": "Milio",
+            "championName": "Miss Fortune",
             "isBot": false,
             "isDead": false,
             "items": [
@@ -387,79 +672,44 @@
                     "canUse": false,
                     "consumable": false,
                     "count": 1,
-                    "displayName": "World Atlas",
-                    "itemID": 3865,
-                    "price": 400,
-                    "rawDescription": "GeneratedTip_Item_3865_Description",
-                    "rawDisplayName": "Item_3865_Name",
+                    "displayName": "Doran's Blade",
+                    "itemID": 1055,
+                    "price": 450,
+                    "rawDescription": "GeneratedTip_Item_1055_Description",
+                    "rawDisplayName": "Item_1055_Name",
                     "slot": 0
+                },
+                {
+                    "canUse": true,
+                    "consumable": true,
+                    "count": 1,
+                    "displayName": "Health Potion",
+                    "itemID": 2003,
+                    "price": 50,
+                    "rawDescription": "GeneratedTip_Item_2003_Description",
+                    "rawDisplayName": "Item_2003_Name",
+                    "slot": 1
+                },
+                {
+                    "canUse": true,
+                    "consumable": false,
+                    "count": 1,
+                    "displayName": "Stealth Ward",
+                    "itemID": 3340,
+                    "price": 0,
+                    "rawDescription": "GeneratedTip_Item_3340_Description",
+                    "rawDisplayName": "Item_3340_Name",
+                    "slot": 6
                 }
             ],
             "level": 1,
-            "position": "UTILITY",
-            "rawChampionName": "game_character_displayname_Milio",
-            "rawSkinName": "game_character_skin_displayname_Milio_1",
+            "position": "BOTTOM",
+            "rawChampionName": "game_character_displayname_MissFortune",
+            "rawSkinName": "game_character_skin_displayname_MissFortune_16",
             "respawnTimer": 0.0,
-            "riotId": "scny#NA1",
-            "riotIdGameName": "scny",
-            "riotIdTagLine": "NA1",
-            "runes": {
-                "keystone": {
-                    "displayName": "Guardian",
-                    "id": 8465,
-                    "rawDescription": "perk_tooltip_Guardian",
-                    "rawDisplayName": "perk_displayname_Guardian"
-                },
-                "primaryRuneTree": {
-                    "displayName": "Resolve",
-                    "id": 8400,
-                    "rawDescription": "perkstyle_tooltip_7204",
-                    "rawDisplayName": "perkstyle_displayname_7204"
-                },
-                "secondaryRuneTree": {
-                    "displayName": "Inspiration",
-                    "id": 8300,
-                    "rawDescription": "perkstyle_tooltip_7203",
-                    "rawDisplayName": "perkstyle_displayname_7203"
-                }
-            },
-            "scores": {
-                "assists": 0,
-                "creepScore": 0,
-                "deaths": 0,
-                "kills": 0,
-                "wardScore": 0.0
-            },
-            "skinID": 1,
-            "skinName": "Faerie Court Milio",
-            "summonerName": "Milio",
-            "summonerSpells": {
-                "summonerSpellOne": {
-                    "displayName": "Heal",
-                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
-                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
-                },
-                "summonerSpellTwo": {
-                    "displayName": "Flash",
-                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
-                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
-                }
-            },
-            "team": "ORDER"
-        },
-        {
-            "championName": "Jayce",
-            "isBot": false,
-            "isDead": false,
-            "items": [],
-            "level": 1,
-            "position": "TOP",
-            "rawChampionName": "game_character_displayname_Jayce",
-            "rawSkinName": "game_character_skin_displayname_Jayce_24",
-            "respawnTimer": 0.0,
-            "riotId": "Sad Cowboy#BATS",
-            "riotIdGameName": "Sad Cowboy",
-            "riotIdTagLine": "BATS",
+            "riotId": "#",
+            "riotIdGameName": "",
+            "riotIdTagLine": "",
             "runes": {
                 "keystone": {
                     "displayName": "First Strike",
@@ -474,10 +724,10 @@
                     "rawDisplayName": "perkstyle_displayname_7203"
                 },
                 "secondaryRuneTree": {
-                    "displayName": "Precision",
-                    "id": 8000,
-                    "rawDescription": "perkstyle_tooltip_7201",
-                    "rawDisplayName": "perkstyle_displayname_7201"
+                    "displayName": "Sorcery",
+                    "id": 8200,
+                    "rawDescription": "perkstyle_tooltip_7202",
+                    "rawDisplayName": "perkstyle_displayname_7202"
                 }
             },
             "scores": {
@@ -487,14 +737,14 @@
                 "kills": 0,
                 "wardScore": 0.0
             },
-            "skinID": 24,
-            "skinName": "Arcane Inventor Jayce",
-            "summonerName": "Jayce",
+            "skinID": 16,
+            "skinName": "Gun Goddess Miss Fortune",
+            "summonerName": "Miss Fortune",
             "summonerSpells": {
                 "summonerSpellOne": {
-                    "displayName": "Ghost",
-                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerHaste_Description",
-                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHaste_DisplayName"
+                    "displayName": "Heal",
+                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
                 },
                 "summonerSpellTwo": {
                     "displayName": "Flash",
@@ -505,18 +755,41 @@
             "team": "CHAOS"
         },
         {
-            "championName": "Graves",
+            "championName": "Nidalee",
             "isBot": false,
             "isDead": false,
-            "items": [],
+            "items": [
+                {
+                    "canUse": false,
+                    "consumable": false,
+                    "count": 1,
+                    "displayName": "World Atlas",
+                    "itemID": 3865,
+                    "price": 400,
+                    "rawDescription": "GeneratedTip_Item_3865_Description",
+                    "rawDisplayName": "Item_3865_Name",
+                    "slot": 0
+                },
+                {
+                    "canUse": true,
+                    "consumable": true,
+                    "count": 2,
+                    "displayName": "Health Potion",
+                    "itemID": 2003,
+                    "price": 50,
+                    "rawDescription": "GeneratedTip_Item_2003_Description",
+                    "rawDisplayName": "Item_2003_Name",
+                    "slot": 1
+                }
+            ],
             "level": 1,
-            "position": "JUNGLE",
-            "rawChampionName": "game_character_displayname_Graves",
-            "rawSkinName": "game_character_displayname_Graves",
+            "position": "UTILITY",
+            "rawChampionName": "game_character_displayname_Nidalee",
+            "rawSkinName": "game_character_displayname_Nidalee",
             "respawnTimer": 0.0,
-            "riotId": "Kemation#NA1",
-            "riotIdGameName": "Kemation",
-            "riotIdTagLine": "NA1",
+            "riotId": "Wormsign Delta#WRMS",
+            "riotIdGameName": "Wormsign Delta",
+            "riotIdTagLine": "WRMS",
             "runes": {
                 "keystone": {
                     "displayName": "Dark Harvest",
@@ -531,10 +804,10 @@
                     "rawDisplayName": "perkstyle_displayname_7200"
                 },
                 "secondaryRuneTree": {
-                    "displayName": "Precision",
-                    "id": 8000,
-                    "rawDescription": "perkstyle_tooltip_7201",
-                    "rawDisplayName": "perkstyle_displayname_7201"
+                    "displayName": "Inspiration",
+                    "id": 8300,
+                    "rawDescription": "perkstyle_tooltip_7203",
+                    "rawDisplayName": "perkstyle_displayname_7203"
                 }
             },
             "scores": {
@@ -545,191 +818,8 @@
                 "wardScore": 0.0
             },
             "skinID": 0,
-            "skinName": "Graves",
-            "summonerName": "Graves",
-            "summonerSpells": {
-                "summonerSpellOne": {
-                    "displayName": "Smite",
-                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerSmite_Description",
-                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerSmite_DisplayName"
-                },
-                "summonerSpellTwo": {
-                    "displayName": "Flash",
-                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
-                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
-                }
-            },
-            "team": "CHAOS"
-        },
-        {
-            "championName": "Diana",
-            "isBot": false,
-            "isDead": false,
-            "items": [],
-            "level": 1,
-            "position": "MIDDLE",
-            "rawChampionName": "game_character_displayname_Diana",
-            "rawSkinName": "game_character_skin_displayname_Diana_64",
-            "respawnTimer": 0.0,
-            "riotId": "TRuerrr#NA1",
-            "riotIdGameName": "TRuerrr",
-            "riotIdTagLine": "NA1",
-            "runes": {
-                "keystone": {
-                    "displayName": "Electrocute",
-                    "id": 8112,
-                    "rawDescription": "perk_tooltip_Electrocute",
-                    "rawDisplayName": "perk_displayname_Electrocute"
-                },
-                "primaryRuneTree": {
-                    "displayName": "Domination",
-                    "id": 8100,
-                    "rawDescription": "perkstyle_tooltip_7200",
-                    "rawDisplayName": "perkstyle_displayname_7200"
-                },
-                "secondaryRuneTree": {
-                    "displayName": "Resolve",
-                    "id": 8400,
-                    "rawDescription": "perkstyle_tooltip_7204",
-                    "rawDisplayName": "perkstyle_displayname_7204"
-                }
-            },
-            "scores": {
-                "assists": 0,
-                "creepScore": 0,
-                "deaths": 0,
-                "kills": 0,
-                "wardScore": 0.0
-            },
-            "skinID": 64,
-            "skinName": "Dark Cosmic Diana",
-            "summonerName": "Diana",
-            "summonerSpells": {
-                "summonerSpellOne": {
-                    "displayName": "Flash",
-                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
-                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
-                },
-                "summonerSpellTwo": {
-                    "displayName": "Ignite",
-                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
-                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
-                }
-            },
-            "team": "CHAOS"
-        },
-        {
-            "championName": "Jhin",
-            "isBot": false,
-            "isDead": false,
-            "items": [],
-            "level": 1,
-            "position": "BOTTOM",
-            "rawChampionName": "game_character_displayname_Jhin",
-            "rawSkinName": "game_character_skin_displayname_Jhin_42",
-            "respawnTimer": 0.0,
-            "riotId": "XxPDineroxX#9338",
-            "riotIdGameName": "XxPDineroxX",
-            "riotIdTagLine": "9338",
-            "runes": {
-                "keystone": {
-                    "displayName": "Fleet Footwork",
-                    "id": 8021,
-                    "rawDescription": "perk_tooltip_FleetFootwork",
-                    "rawDisplayName": "perk_displayname_FleetFootwork"
-                },
-                "primaryRuneTree": {
-                    "displayName": "Precision",
-                    "id": 8000,
-                    "rawDescription": "perkstyle_tooltip_7201",
-                    "rawDisplayName": "perkstyle_displayname_7201"
-                },
-                "secondaryRuneTree": {
-                    "displayName": "Domination",
-                    "id": 8100,
-                    "rawDescription": "perkstyle_tooltip_7200",
-                    "rawDisplayName": "perkstyle_displayname_7200"
-                }
-            },
-            "scores": {
-                "assists": 0,
-                "creepScore": 0,
-                "deaths": 0,
-                "kills": 0,
-                "wardScore": 0.0
-            },
-            "skinID": 42,
-            "skinName": "Soul Fighter Jhin (Sapphire)",
-            "summonerName": "Jhin",
-            "summonerSpells": {
-                "summonerSpellOne": {
-                    "displayName": "Flash",
-                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
-                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
-                },
-                "summonerSpellTwo": {
-                    "displayName": "Barrier",
-                    "rawDescription": "GeneratedTip_SummonerSpell_SummonerBarrier_Description",
-                    "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerBarrier_DisplayName"
-                }
-            },
-            "team": "CHAOS"
-        },
-        {
-            "championName": "Galio",
-            "isBot": false,
-            "isDead": false,
-            "items": [
-                {
-                    "canUse": false,
-                    "consumable": false,
-                    "count": 1,
-                    "displayName": "World Atlas",
-                    "itemID": 3865,
-                    "price": 400,
-                    "rawDescription": "GeneratedTip_Item_3865_Description",
-                    "rawDisplayName": "Item_3865_Name",
-                    "slot": 0
-                }
-            ],
-            "level": 1,
-            "position": "UTILITY",
-            "rawChampionName": "game_character_displayname_Galio",
-            "rawSkinName": "game_character_skin_displayname_Galio_28",
-            "respawnTimer": 0.0,
-            "riotId": "JediguyTWhy#NA1",
-            "riotIdGameName": "JediguyTWhy",
-            "riotIdTagLine": "NA1",
-            "runes": {
-                "keystone": {
-                    "displayName": "Aftershock",
-                    "id": 8439,
-                    "rawDescription": "perk_tooltip_VeteranAftershock",
-                    "rawDisplayName": "perk_displayname_VeteranAftershock"
-                },
-                "primaryRuneTree": {
-                    "displayName": "Resolve",
-                    "id": 8400,
-                    "rawDescription": "perkstyle_tooltip_7204",
-                    "rawDisplayName": "perkstyle_displayname_7204"
-                },
-                "secondaryRuneTree": {
-                    "displayName": "Sorcery",
-                    "id": 8200,
-                    "rawDescription": "perkstyle_tooltip_7202",
-                    "rawDisplayName": "perkstyle_displayname_7202"
-                }
-            },
-            "scores": {
-                "assists": 0,
-                "creepScore": 0,
-                "deaths": 0,
-                "kills": 0,
-                "wardScore": 0.0
-            },
-            "skinID": 28,
-            "skinName": "Mythmaker Galio",
-            "summonerName": "Galio",
+            "skinName": "Nidalee",
+            "summonerName": "Nidalee",
             "summonerSpells": {
                 "summonerSpellOne": {
                     "displayName": "Flash",
@@ -750,13 +840,13 @@
             {
                 "EventID": 0,
                 "EventName": "GameStart",
-                "EventTime": 0.05655049905180931
+                "EventTime": 0.04516670107841492
             }
         ]
     },
     "gameData": {
         "gameMode": "CLASSIC",
-        "gameTime": 4.183625221252441,
+        "gameTime": 21.48834228515625,
         "mapName": "Map11",
         "mapNumber": 11,
         "mapTerrain": "Default"

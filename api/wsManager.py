@@ -35,26 +35,29 @@ class WebSocketManager:
             asyncio.create_task(self._send_to_cloudflare(message))
 
     async def _send_to_cloudflare(self, message: dict):
+        """
+        Sends any message to the Cloudflare Worker.
+        Automatically detects match cards and sets X-Type header.
+        """
+
+        # Detect match card by presence of matchId
+        is_match_card = "matchId" in message
+
+        headers = {}
+        if is_match_card:
+            headers["X-Type"] = "match"
+
         try:
-            # POST the JSON exactly as the Worker expects it
-            response = await self.http_client.post(
-                self.cloudflare_url, json=message, timeout=5.0
+            resp = await self.http_client.post(
+                self.cloudflare_url, headers=headers, json=message, timeout=10
             )
-            if response.status_code != 200:
-                print(f"Cloudflare Relay Error: {response.status_code}")
+            resp.raise_for_status()
+
         except Exception as e:
-            print(f"Failed to reach Cloudflare: {e}")
-
-    async def wait_for_client(self, sec=0.1):
-        while len(self.active_connections) == 0:
-            await asyncio.sleep(sec)
-
-    async def broadcast_after_client(self, message):
-        # NOTE: If you are using Cloudflare, you might not want to wait
-        # for a LOCAL client before pushing to the CLOUD.
-        # If you want it to push to the cloud immediately, call self.broadcast directly.
-        await self.wait_for_client()
-        await self.broadcast(message)
+            if hasattr(e, "response"):
+                print(f"Status: {e.response.status_code}")
+                print(f"Body: {e.response.text}")
+            print(f"[Cloudflare Relay Error] {e}")
 
     async def close(self):
         """Call this when shutting down your app."""

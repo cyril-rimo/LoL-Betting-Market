@@ -63,6 +63,22 @@ export class MarketBroadcaster extends DurableObject {
     `);
   }
 
+  broadcast(message) {
+    const stringified = JSON.stringify(message);
+    
+    // Get all WebSockets currently connected to this specific DO instance
+    const sessions = this.ctx.getWebSockets();
+    
+    sessions.forEach(ws => {
+      try {
+        ws.send(stringified);
+      } catch (e) {
+        // This handles sockets that are closed but not yet removed from the list
+        console.log("Failed to send to a socket, ignoring.");
+      }
+    });
+  }
+
   async fetch(request) {
     const url = new URL(request.url);
     const upgradeHeader = request.headers.get("Upgrade");
@@ -91,67 +107,67 @@ export class MarketBroadcaster extends DurableObject {
     if (request.method === "POST" && request.headers.get("X-Type") === "match") {
       const payload = await request.text();
       const match = JSON.parse(payload);
-      const matchId = match.metadata.matchId;
+      const now = new Date().toISOString();
 
-      // Insert or replace match
+      // 1. Save the match to SQL as usual
       this.ctx.storage.sql.exec(
         "INSERT OR REPLACE INTO matches (id, data) VALUES (?, ?)",
-        matchId,
+        match.matchId,
         payload
       );
 
-      // Keep only last 10 matches
-      this.ctx.storage.sql.exec(`
-        DELETE FROM matches
-        WHERE id NOT IN (
-          SELECT id FROM matches ORDER BY timestamp DESC LIMIT 10
-        )
-      `);
+      // 2. Save the GLOBAL last updated time to metadata storage
+      await this.ctx.storage.put("last_updated_time", now);
 
-      return new Response("Match saved", { status: 200 });
+      return new Response("OK", { status: 200, headers: CORS_HEADERS });
     }
 
     // -------------------------------
     // 3. Frontend fetches last 10 matches
     // -------------------------------
     if (request.method === "GET" && url.pathname === "/matches/latest") {
-      const result = this.ctx.storage.sql.exec(
+      const rows = this.ctx.storage.sql.exec(
         "SELECT data FROM matches ORDER BY timestamp DESC LIMIT 10"
-      );
+      ).toArray();
 
-      const rows = result.results || [];
+      // Fetch the global timestamp we saved
+      const lastUpdated = await this.ctx.storage.get("last_updated_time");
+
+      // Each row is an object where keys are column names (e.g., { data: "..." })
       const matches = rows.map(r => JSON.parse(r.data));
 
-      return new Response(JSON.stringify(matches), {
-        headers: { "Content-Type": "application/json" }
+      return new Response(JSON.stringify({matches, lastUpdated: lastUpdated || null}), {
+        headers: { "Content-Type": "application/json" , ... CORS_HEADERS }
       });
     }
 
-    // -------------------------------
-    // 4. Existing POST for event broadcasting
-    // -------------------------------
+    // ---------------------------------------------------
+    // 4. Collector pushes market start and stop messages
+    // ---------------------------------------------------
     if (request.method === "POST") {
-      const payload = await request.text();
+      try {
+        const data = await request.json();
 
-      // if using events table from above
-      // Save event
-      /*
-      this.ctx.storage.sql.exec(
-        "INSERT INTO events (data) VALUES (?)",
-        payload
-      );
-      */
+        // This triggers the 'ws.onmessage' logic in your React frontend
+        if (data.type === "market_created") {
+          // Save to persistent storage
+          await this.ctx.storage.put("current_market_url", data.url);
+          this.broadcast(data); // Send to live users
+        } 
 
-      // Broadcast to all connected clients
-      this.ctx.getWebSockets().forEach(ws => {
-        try {
-          ws.send(payload);
-        } catch (e) {
-          // Ignore closed sockets
+        else if (data.type === "STOP") {
+          // Remove from persistent storage
+          await this.ctx.storage.delete("current_market_url");
+          this.broadcast(data); // Clear for live users
         }
-      });
 
-      return new Response("Broadcasted", { status: 200 , headers: CORS_HEADERS });
+        return new Response(JSON.stringify({ success: true }), { 
+          status: 200, 
+          headers: CORS_HEADERS 
+        });
+      } catch (err) {
+        return new Response(err.message, { status: 400, headers: CORS_HEADERS });
+      }
     }
 
     return new Response("Expected WebSocket, POST, or /matches/latest", { status: 400 , headers: CORS_HEADERS });

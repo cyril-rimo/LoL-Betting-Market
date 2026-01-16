@@ -80,21 +80,32 @@ class RiotClient:
             time.sleep(181)  # Wait 3 minutes before retrying
         return None
 
-    def get_recent_match(self) -> Dict:
-        """Fetch the most recent match for the player using Match V5 API."""
+    def get_match_ids(self, count: int = 10) -> List[str]:
+        """Return the most recent match IDs for the player."""
+        url = (
+            f"{self._web_base(self.region)}/lol/match/v5/matches/by-puuid/"
+            f"{self._puuid}/ids?start=0&count={count}"
+        )
 
-        url = f"{self._web_base(self.region)}/lol/match/v5/matches/by-puuid/{self._puuid}/ids?start=0&count=1"  # Gets list of match ids by puuid
         resp = self.session.get(url, timeout=self.timeout)
         resp.raise_for_status()
+
         match_ids = resp.json()
         if not match_ids:
-            raise ValueError("No recent matches found for the player")
+            raise ValueError("No matches found for the player")
 
-        match_id = match_ids[0]
-        match_url = f"{self._web_base(self.region)}/lol/match/v5/matches/{match_id}"  # Get match by match id
-        match_resp = self.session.get(match_url, timeout=self.timeout)
-        match_resp.raise_for_status()
-        return match_resp.json()
+        return match_ids
+
+    def get_match(self, match_id: str) -> Dict:
+        """Fetch a single match by match ID."""
+        url = f"{self._web_base(self.region)}/lol/match/v5/matches/{match_id}"
+        resp = self.session.get(url, timeout=self.timeout)
+        resp.raise_for_status()
+        return resp.json()
+
+    def get_last_matches(self, count: int = 10) -> List[Dict]:
+        match_ids = self.get_match_ids(count)
+        return [self.get_match(mid) for mid in match_ids]
 
     def get_game_result(self, match_data: dict) -> str:
         # assume match_data is the info part of the match data
@@ -105,6 +116,80 @@ class RiotClient:
                 break
 
         return win
+
+    def create_match_cards(self, match_data):
+        """
+        Extract a minimal, frontend-friendly match card for THIS player.
+        If the player is not found, return a placeholder card.
+        """
+
+        match_id = match_data.get("metadata", {}).get("matchId", "UNKNOWN_MATCH")
+
+        participants = match_data.get("info", {}).get("participants", [])
+        if not participants:
+            return self._placeholder_card(match_id)
+
+        # Find this player's participant record
+        player = next((p for p in participants if p.get("puuid") == self._puuid), None)
+
+        if not player:
+            return self._placeholder_card(match_id)
+
+        # Compute simple stats
+        kills = player.get("kills", 0)
+        deaths = player.get("deaths", 0)
+        assists = player.get("assists", 0)
+        kda_ratio = (kills + assists) / max(1, deaths)
+
+        total_cs = player.get("totalMinionsKilled", 0) + player.get(
+            "neutralMinionsKilled", 0
+        )
+
+        # Build minimal match card
+        return {
+            "matchId": match_id,
+            "notFound": False,
+            "win": player.get("win"),
+            "champion": player.get("championName"),
+            "role": player.get("teamPosition"),
+            "kda": f"{kills}/{deaths}/{assists}",
+            "kdaRatio": round(kda_ratio, 2),
+            "cs": total_cs,
+            "gold": player.get("goldEarned"),
+            "damage": player.get("totalDamageDealtToChampions"),
+            "items": [
+                player.get("item0"),
+                player.get("item1"),
+                player.get("item2"),
+                player.get("item3"),
+                player.get("item4"),
+                player.get("item5"),
+            ],
+            "summonerSpells": {
+                "d": player.get("summoner1Id"),
+                "f": player.get("summoner2Id"),
+            },
+        }
+
+    def _placeholder_card(self, match_id):
+        """
+        Return a placeholder match card when the player is not found.
+        Keeps the structure identical so the frontend never breaks.
+        """
+        return {
+            "matchId": match_id,
+            "notFound": True,
+            "win": None,
+            "champion": "Unknown",
+            "role": "Unknown",
+            "kda": "0/0/0",
+            "kdaRatio": 0.0,
+            "cs": 0,
+            "gold": 0,
+            "damage": 0,
+            "items": [0, 0, 0, 0, 0, 0],
+            "summonerSpells": {"d": 0, "f": 0},
+        }
 
 
 class LoLEventListener:

@@ -18,3 +18,5 @@ __pycache__/
 
 # other
 wsTest.py
+event_log.txt
+allgamedata.json

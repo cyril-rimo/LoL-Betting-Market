@@ -59,15 +59,16 @@ class ManifoldClient:
         url = "https://api.manifold.markets/v0/market"
 
         description = """
-        Created by a bot by Cyril Rimo. 
-        You can view my live game here https://op.gg/lol/summoners/na/SirAgathon-NA1/ingame.
-        You can self-host your own bot too https://github.com/cyril-rimo/LoL-Betting-Market
-        See my demo https://cyril-rimo.pages.dev/
+        <p>Created by a bot by Cyril Rimo.</p>
+        <p>You can view my live game here: <a href="https://op.gg/lol/summoners/na/SirAgathon-NA1/ingame">OP.GG</a>.</p>
+        <p>You can self-host your own bot too: <a href="https://github.com/cyril-rimo/LoL-Betting-Market">GitHub</a>.</p>
+        <p>See my demo: <a href="https://cyril-rimo.pages.dev/">cyril-rimo.pages.dev</a>.</p>
         """
+
         payload = {
             "outcomeType": "BINARY",
             "question": f"Will I win my next League of Legends match as {champion_name}?",
-            "description": description,
+            "descriptionHtml": description,
             "initialProb": 50,
             "visibility": "public",
             "liquidityTier": 100,

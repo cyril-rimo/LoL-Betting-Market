@@ -4,7 +4,7 @@ from multiprocessing import Queue
 from fastapi import FastAPI, WebSocket
 from wsManager import WebSocketManager
 from threading import Thread
-import time, json, asyncio
+import time, json, asyncio, requests
 from config import Config
 
 DEBUG = True if Config.ENVIRONMENT == "development" else False
@@ -21,21 +21,26 @@ listener = LoLEventListener(queue=event_queue)
 
 @app.on_event("startup")
 async def startup():
-    """
-    Generates event loop upon app start (see Uvicorn) and
-    appends listener and react threads to it.
-    """
     global event_loop
-    event_loop = asyncio.get_running_loop()  # gets existing loop
+    event_loop = asyncio.get_running_loop()
 
-    # ensure the app's event loop is used
+    # Start listener thread
     t1 = Thread(target=listener.listen, daemon=True)
+
+    # Start reactor thread
     t2 = Thread(
         target=react, args=(event_queue, riot_client, manifold_client), daemon=True
     )
 
+    # NEW: Sync matches using standalone function
+    def sync_wrapper():
+        asyncio.run_coroutine_threadsafe(sync_recent_matches(riot_client), event_loop)
+
+    t3 = Thread(target=sync_wrapper, daemon=True)
+
     t1.start()
     t2.start()
+    t3.start()
 
 
 # when another application (i.e. React frontend) navigates to the /ws endpoint
@@ -162,7 +167,7 @@ def react(queue, riot_client=None, manifold_client=None):
                 # Get match information and resolve the betting market on manifold
                 resolved = False
                 while not resolved:
-                    match_info = riot_client.get_recent_match().get("info", {})
+                    match_info = riot_client.get_last_matches(1)[0]["info"]
 
                     # Check if the match from the web api matches the match just played using the StartTime or EndTime fields
                     is_valid_match = verify_match(
@@ -199,6 +204,14 @@ def react(queue, riot_client=None, manifold_client=None):
     finally:
         if log:
             log.close()
+
+
+async def sync_recent_matches(riot_client=None):
+    match_ids = riot_client.get_match_ids(10)
+    for mid in match_ids:
+        match_data = riot_client.get_match(mid)
+        card = riot_client.create_match_cards(match_data)
+        await wsManager.broadcast(card)
 
 
 if __name__ == "__main__":
