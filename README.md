@@ -118,9 +118,9 @@ Create a Cloudflare Page in <dash.cloudflare.com> by navigating to the left side
 Then, click Create Application on the far right-hand corner. Click the bottom link to Get Started with creating a
 page. 
 
-![Dashboard Worker & Compute](assets\cloudflare-page.png) 
+![Dashboard Worker & Compute](assets/cloudflare-page.png) 
 
-![Create application menu](assets\create-app.png)
+![Create application menu](assets/create-app.png)
 
 Get started by importing an existing Git repository. If your Github account is linked, then you can just select
 the repository (LoL-Betting-Market) if you've cloned it and pushed it to your Github account (see above). 
@@ -131,7 +131,7 @@ and it will populate the build settings.
 Lastly, since the repository contains other folders, you need to instruct Cloudflare to build the frontend folder
 only. To do this, you can go to advanced settings and type frontend as the root folder for your project.
 
-![Expected build settings](assets\build-settings.png)
+![Expected build settings](assets/build-settings.png)
 
 You can now Save and Deploy.
 
@@ -142,7 +142,7 @@ earlier. Click it and go to the Settings tab. Find the Variables and Secrets sec
 the variable NEXT_PUBLIC_WORKER_URL and input your worker URL into the value section. You can find your worker URL back 
 at the Workers & Pages tab on your worker object. Save your environment variable.
 
-![Setting your environment variable](assets\env-variable.png)
+![Setting your environment variable](assets/env-variable.png)
 
 Redeploy your page.
 
